@@ -6,10 +6,14 @@ permalink: /about/
 
 
 Jay Lee, studying reinforcement learning and game AI
+
 <br/>
+<br/>
+
 Chuncheon. Korea.
 Kangwon National University
+intelleej@gmail.com
+
+<br/>
 
 [Github](https://github.com/Clarit7)
-
-[Blog](https://clarit7.github.io)
