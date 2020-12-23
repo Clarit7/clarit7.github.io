@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Clarit7
+title: .js
 email: intelleej@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Madmax
+  Jay's development records
 url: "http://clarit7.github.io" # the base hostname & protocol for your site
 
 baseurl: ""
@@ -25,7 +25,7 @@ color-2: '#26B99A'
 # Author pictre 100x100 --> keep it inside img folder.
 author-image: 'author.jpg'
 author-name: 'Jay Lee' 
-author-about: 'Jay Lee should be described in a very few words!' 
+author-about: 'Senior student, studying reinforcement learning and game AI' 
 
 # Build settings
 markdown: kramdown
