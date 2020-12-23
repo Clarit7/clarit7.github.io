@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 
-Jay Lee, studying reinforcement learning and game AI
+#### Jay Lee, studying reinforcement learning and game AI
 
 <br/>
 
