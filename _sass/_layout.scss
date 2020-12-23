@@ -11,7 +11,12 @@ body{
         }
 }
 
-
+.site-title-text {
+    vertical-align : middle;
+    line-height : 100%;
+    font-size : 28px;
+    color : #909090;
+}
 
 .site-header {
     
@@ -21,13 +26,6 @@ body{
      @include media-query($on-palm){
         margin-top: 0.625em;
         }
-    
-    site-title-text {
-        vertical-align : middle;
-        font-size : 28px;
-        color : 909090;
-    }
-    
 }
 
 
