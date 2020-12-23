@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);//google web font added
+
 /**
  * Reset some basic elements
  */
@@ -14,6 +16,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+    font-family: 'Nanum Gothic Coding', serif;
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: transparent;
@@ -105,6 +108,7 @@ blockquote {
     color: $text-color;
     border-left: 4px solid $brand-color;
     padding-left: $spacing-unit / 2;
+    font-family: 'Nanum Gothic Coding', serif;
     font-size: 16px;
     letter-spacing: -1px;
     font-style: italic;
@@ -121,6 +125,7 @@ blockquote {
  */
 pre,
 code {
+    font-family: 'Nanum Gothic Coding', serif;
     font-size: 15px;
     border: 1px solid $brand-color;
     border-radius: 3px;
