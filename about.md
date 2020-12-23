@@ -8,10 +8,11 @@ permalink: /about/
 Jay Lee, studying reinforcement learning and game AI
 
 <br/>
-<br/>
 
 Chuncheon. Korea.
+
 Kangwon National University
+
 intelleej@gmail.com
 
 <br/>
