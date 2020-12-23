@@ -43,6 +43,8 @@ layout: default
       </tbody>
     </table>
   </div>
-  {% include author.html %}
-  {% if site.disqus-shortname %}{% include disqus.html %}{% endif %}
+  <div>
+    {% include author.html %}
+    {% if site.disqus-shortname %}{% include disqus.html %}{% endif %}
+</div>
 </article>
