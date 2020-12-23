@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);//google web font added
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 /**
  * Reset some basic elements
@@ -16,7 +17,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: 'Nanum Gothic Coding', serif;
+    font-family: 'Nanum Gothic', serif;
     color: $text-color;
     background-color: transparent;
     text-rendering: optimizeLegibility;
