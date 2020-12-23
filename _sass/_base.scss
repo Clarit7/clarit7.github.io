@@ -1,18 +1,3 @@
---- 
-# Only the main Sass file needs front matter (the dashes are enough) 
---- 
-
-// https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/#customizing
-$sans-serif: 'Noto Sans KR';
-$monospace: 'Ubuntu Mono';
-$type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
-
-@charset "utf-8";
-@import "minimal-mistakes/skins/aqua"; // skin
-@import "minimal-mistakes";
-
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR|Ubuntu+Mono);
-
 /**
  * Reset some basic elements
  */
@@ -29,7 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: $monospace;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: transparent;
     text-rendering: optimizeLegibility;
@@ -92,7 +77,6 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-family: $monospace;
     font-weight: bold;
 }
 
@@ -121,7 +105,6 @@ blockquote {
     color: $text-color;
     border-left: 4px solid $brand-color;
     padding-left: $spacing-unit / 2;
-    font-family: $monospace;
     font-size: 16px;
     letter-spacing: -1px;
     font-style: italic;
@@ -138,7 +121,6 @@ blockquote {
  */
 pre,
 code {
-    font-family: $monospace;
     font-size: 15px;
     border: 1px solid $brand-color;
     border-radius: 3px;
@@ -147,7 +129,7 @@ code {
 
 code {
     padding: 1px 5px;
-    
+
 }
 
 pre {
@@ -159,6 +141,5 @@ pre {
         padding-left: 0;
     }
 }
-
 
 
