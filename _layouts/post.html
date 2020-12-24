@@ -11,38 +11,40 @@ layout: default
   <br />
   <div class="post-content" itemprop="articleBody">
     {{ content }}
-  </div>
+    
+    <br />
 
-  <br />
-  <div class="more-posts">
-    <div class="more-category">
-      <!-- 하단의 더보기의 링크는 자신의 사이트에 맞게 수정 -->
-      <h4>'{{ page.categories }}' 카테고리의 다른 글</h4>
-      <a href="/categories/{{ page.categories }}" class="more-button">더보기</a>
-    </div>
-    <table class="bot">
-      <tbody>
-        <!-- if문 도는 횟수 체크하기 위해 변수 선언 -->
-        {% assign count = 0 %}
-        {% for post in site.posts %}
-          <!-- 전체 포스트의 카테고리가 현재 들어와 있는 페이지의 카테고리와 같은지 판단-->
-          {% if post.categories == page.categories %}
-            {% assign count = count | plus: 1 %}
-            <!-- 글의 목록을 최대 4개만 허용 -->
-            {% if count < 5 %}
-              <tr>
-                <!-- 각 포스트의 링크도 자신의 사이트에 맞게 수정 -->
-                <th class="more-posts-title">
-                  <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                </th>
-                <td class="more-posts-date">{{ post.date | date: '%Y. %m. %d' }}</td>
-              </tr>
+    <div class="more-posts">
+      <div class="more-category">
+        <!-- 하단의 더보기의 링크는 자신의 사이트에 맞게 수정 -->
+        <h4>'{{ page.categories }}' 카테고리의 다른 글</h4>
+        <a href="/categories/{{ page.categories }}" class="more-button">더보기</a>
+      </div>
+      <table class="bot">
+        <tbody>
+          <!-- if문 도는 횟수 체크하기 위해 변수 선언 -->
+          {% assign count = 0 %}
+          {% for post in site.posts %}
+            <!-- 전체 포스트의 카테고리가 현재 들어와 있는 페이지의 카테고리와 같은지 판단-->
+            {% if post.categories == page.categories %}
+              {% assign count = count | plus: 1 %}
+              <!-- 글의 목록을 최대 4개만 허용 -->
+              {% if count < 5 %}
+                <tr>
+                  <!-- 각 포스트의 링크도 자신의 사이트에 맞게 수정 -->
+                  <th class="more-posts-title">
+                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                  </th>
+                  <td class="more-posts-date">{{ post.date | date: '%Y. %m. %d' }}</td>
+                </tr>
+              {% endif %}
             {% endif %}
-          {% endif %}
-        {% endfor %}
-      </tbody>
-    </table>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
   </div>
 </article>
+
 {% include author.html %}
 {% if site.disqus-shortname %}{% include disqus.html %}{% endif %}
