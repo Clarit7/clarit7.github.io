@@ -11,34 +11,14 @@ layout: default
   <br />
   <div class="post-content" itemprop="articleBody">
     {{ content }}
-    
-    <br />
-
-    <div class="more-posts">
-      <div class="more-category">
-        <h4>'{{ page.categories }}' 카테고리의 다른 글</h4>
-        <a href="/categories/{{ page.categories }}" class="more-button">더보기</a>
-      </div>
-      <table class="bot">
-        <tbody>
-          {% assign count = 0 %}
-          {% for post in site.posts %}
-            {% if post.categories == page.categories %}
-              {% assign count = count | plus: 1 %}
-              {% if count < 5 %}
-                <tr>
-                  <th class="more-posts-title">
-                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                  </th>
-                  <td class="more-posts-date">{{ post.date | date: '%Y. %m. %d' }}</td>
-                </tr>
-              {% endif %}
-            {% endif %}
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
   </div>
-  {% include author.html %}
-  {% if site.disqus-shortname %}{% include disqus.html %}{% endif %}
 </article>
+<br />
+<br />
+{% include more.html %}
+<br />
+<br />
+{% include author.html %}
+<br />
+<br />
+{% if site.disqus-shortname %}{% include disqus.html %}{% endif %}
