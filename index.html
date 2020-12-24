@@ -4,13 +4,13 @@ layout: default
 
 <div class="home">
 
-  <h1 class="post-header">Posts</h1>
+  <h1 class="post-header">Recent Posts</h1>
 
   <ul class="post-list">
     {% assign count = 0 %}
     {% for post in site.posts %}
       {% assign count = count | plus: 1 %}
-      {% if count > 3 %}
+      {% if count > 20 %}
         {% break %}
       {% endif %}
       <li>
