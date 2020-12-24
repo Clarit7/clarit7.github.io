@@ -10,15 +10,16 @@ layout: default
     {% assign count = 0 %}
     {% for post in site.posts %}
       {% assign count = count | plus: 1 %}
-      {% if count < 3 %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-        </li>
+      {% if count < 4 %}
+        {% break %}
       {% endif %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
     {% endfor %}
   </ul>
 
