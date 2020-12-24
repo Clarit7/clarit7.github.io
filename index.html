@@ -9,6 +9,7 @@ layout: default
   <ul class="post-list">
     {% assign count = 0 %}
     {% for post in site.posts %}
+      {% assign count = count | plus: 1 %}
       {% if count < 3 %}
         <li>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
