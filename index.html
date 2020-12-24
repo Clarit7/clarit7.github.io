@@ -10,7 +10,7 @@ layout: default
     {% assign count = 0 %}
     {% for post in site.posts %}
       {% assign count = count | plus: 1 %}
-      {% if count < 4 %}
+      {% if count > 3 %}
         {% break %}
       {% endif %}
       <li>
