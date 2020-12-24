@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);//google web font added
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 /**
  * Reset some basic elements
@@ -17,7 +17,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font-family: 'Nanum Gothic', serif;
+    font-family: 'Noto Sans KR', serif;
     color: $text-color;
     background-color: transparent;
     text-rendering: optimizeLegibility;
