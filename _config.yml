@@ -9,7 +9,7 @@
 title: .js
 email: intelleej@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Jay's Notes.
+  Jay's Notes
 url: "http://clarit7.github.io" # the base hostname & protocol for your site
 
 baseurl: ""
