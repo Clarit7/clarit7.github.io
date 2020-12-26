@@ -20,10 +20,10 @@ ModuleNotFoundError: No module named '[module_name]'
 
 ```markdown
 [최상위 폴더]
-|
+│
 └ [하위 폴더]
-| |
-| └ [모듈 포함 패키지]
-|
+│ │
+│ └ [모듈 포함 패키지]
+│
 └ [실행파일]
 ```
