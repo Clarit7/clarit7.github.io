@@ -16,6 +16,9 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named '[module_name]'
 ```
 
+<br/>
+
+
 구글링 시 환경변수 문제임을 알 수 있었으나, 해결방법이 복잡하고 같은 문제가 생길때마다 커스텀 폴더의 패키지들을 환경변수에 등록하는 것이 너무 번거롭다고 생각되어 다른 방법을 찾아봤는데 해결방법은 의외로 간단했다. 실행파일을 최상위 폴더에 두고, 하위 폴더에 패키지가 포함되도록 아래와 같이 폴더 구조를 리팩토링 하면 된다.
 
 ```markdown
