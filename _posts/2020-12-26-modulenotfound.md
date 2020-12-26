@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 파이썬 커스텀 패키지 import중 ModuleNotFoundError
-categories: linux
+categories: python
 tags: 
-  - linux
   - python
+  - linux
 ---
 
 Argument Parser 구현 후 콘솔창에서 파이썬 파일을 실행하려 했으나 커스텀 파일의 모듈들이 import가 불가능한 문제가 발생했다.
