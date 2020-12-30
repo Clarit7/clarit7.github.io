@@ -29,6 +29,11 @@ author-about: 'Senior student, studying reinforcement learning and game AI'
 
 # Build settings
 markdown: kramdown
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 sass:
     style: compressed
