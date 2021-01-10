@@ -23,7 +23,7 @@ Senior student in Kangwon National University
 
 ## Tech
 
-![pytorch](./images/about/3.png) ![python](./images/about/4.png) ![github](./images/about/2.png) ![linux](./images/about/5.png) ![java](./images/about/6.png) ![react](./images/about/7.png)
+![pytorch](./images/about/pytorch.png) ![python](./images/about/python.png) ![github](./images/about/github.png) ![linux](./images/about/linux.png) ![java](./images/about/java.png) ![react](./images/about/react.png)
 
 <br/>
 
