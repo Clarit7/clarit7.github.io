@@ -15,7 +15,7 @@ Senior student in Kangwon National University
 
 <br/>
 
-  [Github](https://github.com/Clarit7)    [Blog](https://clarit7.github.io)   [Email](mailto:intelleej@gmail.com)
+  [Github](https://github.com/Clarit7)   [Blog](https://clarit7.github.io)   [Email](mailto:intelleej@gmail.com)
 
 ***
 
@@ -25,8 +25,22 @@ Senior student in Kangwon National University
 
 ## Award
 
+* **한국정보과학회 주니어/학부생 부문**
+
+  장려상
+  
+* **Naver AI RUSH 2020 (2020.08)**
+  
+  Anomaly detection in time series data - 1th
+  
+  Spam mail classification - 3th
+  
 ---
 ## Experiece
+
+* **교내 산학협력 프로젝트**
+  
+  bunnfit 앱 타이머 모듈 및 운동추천 웹앱 제작
 
 ***
 
@@ -36,9 +50,7 @@ Senior student in Kangwon National University
   
   [Link](https://github.com/datamllab/rlcard)
   
-  Implementing Blackjack and Limit Hold'em human interface
-  
-  Implementing different number of players in Blackjack
+  Implementing Blackjack, Limit Hold'em human interface, and different number of players in Blackjack
 
 ***
 
