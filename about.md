@@ -19,16 +19,19 @@ Senior student in Kangwon National University
 [Blog](https://clarit7.github.io)
 [Email](intelleej@gmail.com)
 
----
+***
+
 ## Tech
 
----
+***
+
 ## Award
 
 ---
 ## Experiece
 
----
+***
+
 ## Contribution
 
 * **RLCard: A Toolkit for Reinforcement Learning in Card Games**
@@ -39,7 +42,8 @@ Senior student in Kangwon National University
   
   Implementing different number of players in Blackjack
 
----
+***
+
 ## Research
 
 * **AlphaQuoridor: AlphaZero 알고리즘 기반 쿼리도 게임 에이전트 구현**
