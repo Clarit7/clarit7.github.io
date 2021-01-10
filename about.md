@@ -52,9 +52,11 @@ Senior student in Kangwon National University
 
 * **교내 산학협력 프로젝트**
   
+  ![/images/about/1.png](/images/about/1.png)
+  
   bunnfit 앱 타이머 모듈 및 운동추천 웹앱 제작 - Team Leader, React js developer
 
-  ![/images/about/1.png]
+  
 <br/>
 
 ***
