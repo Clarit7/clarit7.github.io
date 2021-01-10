@@ -67,7 +67,7 @@ Senior student in Kangwon National University
   
   [Link](https://github.com/datamllab/rlcard)
   
-  Implementing Blackjack, Limit Hold'em human interface, and different number of players in Blackjack
+  Implemented Blackjack, Limit Hold'em human interface, and different number of players in Blackjack
 
 <br/>
 
