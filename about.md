@@ -25,7 +25,7 @@ Senior student in Kangwon National University
 
 <br/>
 
-![pytorch](./images/about/pytorch.png) ![python](./images/about/python.png) ![github](./images/about/github.png) ![git](./images/about/git.png) ![linux](./images/about/linux.png) ![java](./images/about/java.png) ![clang](./images/about/clang.png) ![html](./images/about/html.png) ![css](./images/about/css.png) ![js](./images/about/js.png) ![react](./images/about/react.png) ![android](./images/about/android.png) ![scala](./images/about/scala.png)
+![pytorch](./images/about/pytorch.png) ![python](./images/about/python.png) ![github](./images/about/github.png) ![git](./images/about/git.png) ![linux](./images/about/linux.png) ![markdown](./images/about/iconfinder_markdown_298823.png) ![java](./images/about/java.png) ![clang](./images/about/clang.png) ![html](./images/about/html.png) ![css](./images/about/css.png) ![js](./images/about/js.png) ![react](./images/about/react.png) ![android](./images/about/android.png) ![scala](./images/about/scala.png)
 
 <br/>
 
