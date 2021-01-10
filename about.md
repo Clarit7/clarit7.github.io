@@ -23,7 +23,7 @@ Senior student in Kangwon National University
 
 ## Tech
 
-<img src="https://github.com/Clarit7/clarit7.github.io/blob/master/images/about/3.png" width="100px" height="100px"> <img src="https://github.com/Clarit7/clarit7.github.io/blob/master/images/about/4.png" width="100px" height="100px"> <img src="https://github.com/Clarit7/clarit7.github.io/blob/master/images/about/2.png" width="100px" height="100px">  <img src="https://github.com/Clarit7/clarit7.github.io/blob/master/images/about/5.png" width="100px" height="100px"> <img src="https://github.com/Clarit7/clarit7.github.io/blob/master/images/about/6.png" width="100px" height="100px"> <img src="https://github.com/Clarit7/clarit7.github.io/blob/master/images/about/7.png" height="100px">
+![pytorch](./images/about/3.png) ![python](./images/about/4.png) ![github](./images/about/2.png) ![linux](./images/about/5.png) ![java](./images/about/6.png) ![react](./images/about/7.png)
 
 <br/>
 
