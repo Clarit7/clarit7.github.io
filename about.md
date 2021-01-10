@@ -34,6 +34,8 @@ Senior student in Kangwon National University
 
   AlphaQuoridor: AlphaZero 알고리즘 기반 쿼리도 게임 에이전트 구현 - 장려상
   
+<br/>
+  
 * **Naver AI RUSH 2020 (2020.08)**
   
   [Link](https://campaign.naver.com/airush/)
@@ -73,7 +75,9 @@ Senior student in Kangwon National University
 * **AlphaQuoridor: AlphaZero 알고리즘 기반 쿼리도 게임 에이전트 구현**
 
   [Github](https://github.com/Clarit7/AlphaZero_Quoridor)   [Paper](https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09874821)   [Slide]
-  
+
+<br/>
+
 * **적대적 멀티 에이전트 상황에서 distributional value의 적합성 연구**
 
   In progress
