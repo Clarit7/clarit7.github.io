@@ -23,6 +23,8 @@ Senior student in Kangwon National University
 
 ## Tech
 
+<br/>
+
 ![pytorch](./images/about/pytorch.png) ![python](./images/about/python.png) ![github](./images/about/github.png) ![git](./images/about/git.png) ![linux](./images/about/linux.png) ![java](./images/about/java.png) ![clang](./images/about/clang.png) ![html](./images/about/html.png) ![css](./images/about/css.png) ![js](./images/about/js.png) ![react](./images/about/react.png) ![android](./images/about/android.png) ![scala](./images/about/scala.png)
 
 <br/>
@@ -30,6 +32,8 @@ Senior student in Kangwon National University
 ***
 
 ## Award
+
+<br/>
 
 * **한국정보과학회 학부생/주니어 부문 (2020.08)**
 
@@ -51,6 +55,8 @@ Senior student in Kangwon National University
 
 ## Experiece
 
+<br/>
+
 * **교내 산학협력 프로젝트**
   
   ![/images/about/1.png](/images/about/1.png)
@@ -64,6 +70,8 @@ Senior student in Kangwon National University
 
 ## Contribution
 
+<br/>
+
 * **RLCard: A Toolkit for Reinforcement Learning in Card Games**
   
   [Link](https://github.com/datamllab/rlcard)
@@ -75,6 +83,8 @@ Senior student in Kangwon National University
 ***
 
 ## Research
+
+<br/>
 
 * **AlphaQuoridor: AlphaZero 알고리즘 기반 쿼리도 게임 에이전트 구현**
 
