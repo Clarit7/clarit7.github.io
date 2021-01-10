@@ -23,6 +23,7 @@ Senior student in Kangwon National University
 
 ## Tech
 
+
 <br/>
 
 ***
@@ -49,7 +50,7 @@ Senior student in Kangwon National University
 
 * **교내 산학협력 프로젝트**
   
-  bunnfit 앱 타이머 모듈 및 운동추천 웹앱 제작
+  bunnfit 앱 타이머 모듈 및 운동추천 웹앱 제작(Team Leader, React js developer)
 
 <br/>
 
@@ -71,8 +72,8 @@ Senior student in Kangwon National University
 
 * **AlphaQuoridor: AlphaZero 알고리즘 기반 쿼리도 게임 에이전트 구현**
 
-  [Paper](https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09874821)   [Slide]
+  [Github](https://github.com/Clarit7/AlphaZero_Quoridor)   [Paper](https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09874821)   [Slide]
   
-* **적대적 멀티 에이전트 상황에서의 distributional value의 적합성 연구**
+* **적대적 멀티 에이전트 상황에서 distributional value의 적합성 연구**
 
   In progress
