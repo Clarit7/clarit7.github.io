@@ -23,7 +23,7 @@ Senior student in Kangwon National University
 
 ## Tech
 
-![/images/about/2.png](/images/about/2.png) ![/images/about/3.png](/images/about/3.png) ![/images/about/4.png](/images/about/4.png) ![/images/about/5.png](/images/about/5.png) ![/images/about/6.png](/images/about/6.png) ![/images/about/7.png](/images/about/7.png)
+![/images/about/2.png](/images/about/2.png =100x) ![/images/about/3.png](/images/about/3.png =100x) ![/images/about/4.png](/images/about/4.png =100x) ![/images/about/5.png](/images/about/5.png =100x) ![/images/about/6.png](/images/about/6.png =100x) ![/images/about/7.png](/images/about/7.png =100x)
 
 <br/>
 
