@@ -25,11 +25,13 @@ Senior student in Kangwon National University
 
 ## Award
 
-* **한국정보과학회 주니어/학부생 부문**
+* **한국정보과학회 학부생/주니어 부문(2020.08)**
 
-  장려상
+  AlphaQuoridor: AlphaZero 알고리즘 기반 쿼리도 게임 에이전트 구현 - 장려상
   
 * **Naver AI RUSH 2020 (2020.08)**
+  
+  [Link](https://campaign.naver.com/airush/)
   
   Anomaly detection in time series data - 1th
   
@@ -58,6 +60,8 @@ Senior student in Kangwon National University
 
 * **AlphaQuoridor: AlphaZero 알고리즘 기반 쿼리도 게임 에이전트 구현**
 
-  [Paper](https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09874821)
+  [Paper](https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09874821)   [Slide]
   
-  [Slide]
+* **적대적 멀티 에이전트 상황에서의 distributional value의 적합성 연구**
+
+  In progress
