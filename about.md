@@ -78,6 +78,8 @@ Senior student in Kangwon National University
 
 * **AlphaQuoridor: AlphaZero 알고리즘 기반 쿼리도 게임 에이전트 구현**
 
+  ![quoridor](./images/quoridor.gif)
+
   [Github](https://github.com/Clarit7/AlphaZero_Quoridor) &nbsp; &nbsp; [Paper](https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09874821)
 
 <br/>
