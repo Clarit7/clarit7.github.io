@@ -19,7 +19,7 @@ Senior student in Kangwon National University
 
 [Blog](https://clarit7.github.io)
 
-[Email](intelleej@gmail.com)
+[Email](mailto:intelleej@gmail.com)
 
 ***
 
