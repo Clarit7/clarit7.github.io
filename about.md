@@ -31,7 +31,7 @@ Senior student in Kangwon National University
 
 ## Award
 
-* **한국정보과학회 학부생/주니어 부문(2020.08)**
+* **한국정보과학회 학부생/주니어 부문 (2020.08)**
 
   AlphaQuoridor: AlphaZero 알고리즘 기반 쿼리도 게임 에이전트 구현 - 장려상
   
