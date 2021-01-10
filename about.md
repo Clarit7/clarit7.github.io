@@ -74,7 +74,7 @@ Senior student in Kangwon National University
 
 * **RLCard: A Toolkit for Reinforcement Learning in Card Games**
   
-  [Link](https://github.com/datamllab/rlcard)
+  [Github](https://github.com/datamllab/rlcard)
   
   Implemented Blackjack, Limit Hold'em human interface, and different number of players in Blackjack
 
