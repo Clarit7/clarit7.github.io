@@ -45,9 +45,9 @@ Senior student in Kangwon National University
   
   [Link](https://campaign.naver.com/airush/)
   
-  Anomaly detection in time series data - 1th
+  Anomaly detection in time series data - 1st
   
-  Spam mail classification - 3th
+  Spam mail classification - 3rd
   
 <br/>
 
