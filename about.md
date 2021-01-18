@@ -63,6 +63,7 @@ Senior student in Kangwon National University
   
   bunnfit 앱 타이머 모듈 및 운동추천 웹앱 제작 - Team Leader, React js developer
 
+  [Link](https://poll.haja.life/)
   
 <br/>
 
