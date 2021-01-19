@@ -63,7 +63,7 @@ Senior student in Kangwon National University
   
   bunnfit 앱 타이머 모듈 및 운동추천 웹앱 제작 - Team Leader, React js developer
 
-  [Android](https://play.google.com/store/apps/details?id=com.bunnit.haja.android) &nbsp; &nbsp; [ios](https://apps.apple.com/kr/app/%EB%B2%88%ED%95%8F-%EA%B8%B0%EB%A1%9D%EC%9D%B4-%EB%AA%B8%EC%9D%84-%EB%A7%8C%EB%93%A0%EB%8B%A4/id1503464984) &nbsp; &nbsp; [Webapp](https://poll.haja.life/)
+  [Android](https://play.google.com/store/apps/details?id=com.bunnit.haja.android) &nbsp; &nbsp; [iOS](https://apps.apple.com/kr/app/%EB%B2%88%ED%95%8F-%EA%B8%B0%EB%A1%9D%EC%9D%B4-%EB%AA%B8%EC%9D%84-%EB%A7%8C%EB%93%A0%EB%8B%A4/id1503464984) &nbsp; &nbsp; [Webapp](https://poll.haja.life/)
   
 <br/>
 
