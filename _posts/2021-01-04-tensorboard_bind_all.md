@@ -2,7 +2,9 @@
 layout: post
 title: 텐서보드 원격 실행 (bind_all 옵션)
 categories: linux
-tags: linux, tensorboard 
+tags: 
+  - linux
+  - tensorboard 
 ---
 
 리눅스에선 ngrok로 localhost의 포트를 http로 연결해 원격으로 접속할 수 있다.
