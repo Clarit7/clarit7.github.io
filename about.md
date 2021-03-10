@@ -105,6 +105,6 @@ Senior student in Kangwon National University
 
 <br/>
 
-* **적대적 멀티 에이전트 상황에서 distributional value의 적합성 연구**
+* **TRON의 비정적, 정적 에이전트 결합 학습 방법 연구**
 
   In progress
