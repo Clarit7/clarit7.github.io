@@ -11,7 +11,7 @@ permalink: /about/
 
 Chuncheon. Korea.
 
-Senior student in Kangwon National University
+Senior student in Theory of Computation Lab, Kangwon National University
 
 <br/>
 
