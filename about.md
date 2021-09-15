@@ -5,17 +5,28 @@ permalink: /about/
 ---
 
 
-#### Jay Lee, studying reinforcement learning and game AI
+#### Jay Lee, junior programmer
 
 <br/>
 
-Chuncheon. Korea.
+Seoul. Korea. AI Lab Unit, Hana Bank.
 
-Senior student in Theory of Computation Lab, Kangwon National University
+Studied ML/DL/RL in Theory of Computation Lab, Kangwon National University(Bachelor's degree)
 
 <br/>
 
   [Github](https://github.com/Clarit7) &nbsp; &nbsp; [Blog](https://clarit7.github.io) &nbsp; &nbsp; [Email](mailto:intelleej@gmail.com) &nbsp; &nbsp; [Lab](https://narame7.github.io/) &nbsp; &nbsp; [DockerHub](https://hub.docker.com/u/clarit7)
+
+<br/>
+
+***
+
+## Career
+
+* 2015.03 ~ 2016.08 : 강원대학교 화학공학과 입학 및 학부 생활
+* 2019.03 ~ 2021.08 : 강원대학교 컴퓨터정보통신공학과 전과, 학사 졸업
+* 2019.12 ~ 2021.07 : 강원대학교 계산이론 연구실 학부연구생
+* 2021.07 ~ 현재 : 하나은행 데이터&제휴투자본부 AI Lab Unit 근무
 
 <br/>
 
