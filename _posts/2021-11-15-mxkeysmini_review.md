@@ -12,7 +12,7 @@ tags:
 
 <br/>
 
-![/images/2021/11/15/main.png](/images/2021/11/15/main.png){: .center}
+<p align="center"><img src="/images/2021/11/15/main.png"></p>
 
 <br/>
 
@@ -20,7 +20,7 @@ tags:
 
 <br/>
 
-![/images/2021/11/15/mxkeys.png](/images/2021/11/15/mxkeys.png){: .center}
+<p align="center"><img src="/images/2021/11/15/mxkeys.png"></p>
 
 <br/>
 
@@ -64,8 +64,8 @@ tags:
 
 <br/>
 
-![/images/2021/11/15/mini.jpg](/images/2021/11/15/mini.jpg){: width="800"}{: .center}
-![/images/2021/11/15/miniany.jpg](/images/2021/11/15/miniany.jpg){: width="800"}{: .center}
+<p align="center"><img src="/images/2021/11/15/mini.jpg" width="800px"></p>
+<p align="center"><img src="/images/2021/11/15/miniany.jpg" width="800px"></p>
 
 <br/>
 
@@ -90,7 +90,7 @@ tags:
 
 <br/>
 
-![/images/2021/11/15/minicolors.png](/images/2021/11/15/minicolors.png){: width="800"}{: .center}
+<p align="center"><img src="/images/2021/11/15/minicolors.png" width="800px"></p>
 
 <br/>
 <br/>
@@ -117,7 +117,7 @@ MX Keys의 아들답게 사용성은 배열 차이를 제외하곤 완전히 동
 
 <br/>
 
-![/images/2021/11/15/type.GIF](/images/2021/11/15/type.GIF){: width="800"}{: .center}
+<p align="center"><img src="/images/2021/11/15/type.GIF" width="800px"></p>
 
 <br/>
 
@@ -129,7 +129,7 @@ MX Keys의 아들답게 사용성은 배열 차이를 제외하곤 완전히 동
 
 <br/>
 
-![/images/2021/11/15/bolt.png](/images/2021/11/15/bolt.png){: width="300"}{: .center}
+<p align="center"><img src="/images/2021/11/15/bolt.png" width="300px"></p>
 
 <br/>
 
