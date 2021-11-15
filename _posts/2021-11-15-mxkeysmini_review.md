@@ -12,7 +12,12 @@ tags:
 
 <br/>
 
-<p align="center"><img src="/images/2021/11/15/main.png"></p>
+<p align="center">
+	<img src="/images/2021/11/15/main.png">
+	<figcaption color="gray">
+		MX Keys Mini
+ 	</figcaption>
+</p>
 
 <br/>
 
