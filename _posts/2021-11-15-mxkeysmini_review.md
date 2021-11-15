@@ -14,7 +14,7 @@ tags:
 
 <p align="center">
 	<img src="/images/2021/11/15/main.png">
-	<figcaption style="text-align:center; font-size:9px; color:#808080">
+	<figcaption style="text-align:center; font-size:12px; color:#808080">
 		MX Keys Mini
  	</figcaption>
 </p>
@@ -27,7 +27,7 @@ tags:
 
 <p align="center">
     <img src="/images/2021/11/15/mxkeys.png">
-    <figcaption style="text-align:center; font-size:9px; color:#808080">
+    <figcaption style="text-align:center; font-size:12px; color:#808080">
         MX Keys, 지금도 상당히 많은 사람들에게 사랑받는 키보드다.
     </figcaption>
 </p>
@@ -79,7 +79,7 @@ tags:
 </p>
 <p align="center">
 	<img src="/images/2021/11/15/miniany.jpg" width="800px">
-    <figcaption style="text-align:center; font-size:9px; color:#808080">
+    <figcaption style="text-align:center; font-size:12px; color:#808080">
     	MX Anywhere3 마우스와 깔맞춤
     </figcaption>
 </p>
@@ -109,7 +109,7 @@ tags:
 
 <p align="center">
 	<img src="/images/2021/11/15/minicolors.png" width="800px">
-    <figcaption style="text-align:center; font-size:9px; color:#808080">
+    <figcaption style="text-align:center; font-size:12px; color:#808080">
     	MX Keys Mini는 전작과 다르게 총 4가지 색상으로 출시되었다.
     </figcaption>
 </p>
@@ -141,8 +141,8 @@ MX Keys의 아들답게 사용성은 배열 차이를 제외하곤 완전히 동
 
 <p align="center">
 	<img src="/images/2021/11/15/type.GIF" width="800px">
-    <figcaption style="text-align:center; font-size:9px; color:#808080">
-    	고스트 현상으로 인해 한글 "의"가 동시입력이 불가능하다.
+    <figcaption style="text-align:center; font-size:12px; color:#808080">
+    	고스트 현상으로 인해 한글 "의"와 같은 일부 글자의 동시입력이 불가능하다.
     </figcaption>
 </p>
 
@@ -158,8 +158,8 @@ MX Keys의 아들답게 사용성은 배열 차이를 제외하곤 완전히 동
 
 <p align="center">
 	<img src="/images/2021/11/15/bolt.png" width="300px">
-	<figcaption style="text-align:center; font-size:9px; color:#808080">
-    	보안성을 강화한 연결방식인 Logi bolt receiver
+	<figcaption style="text-align:center; font-size:12px; color:#808080">
+    	보안성을 강화한 연결방식인 Logi bolt receiver "미포함"
     </figcaption>
 </p>
 
