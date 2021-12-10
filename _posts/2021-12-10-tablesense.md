@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tablesense 논문 리뷰 (TableSense: Spreadsheet Table Detection with Convolutional Neural Networks)
+title: Tablesense 논문 리뷰 (TableSense\: Spreadsheet Table Detection with Convolutional Neural Networks)
 categories: computer_vision
 tags: 
   - computer_vision
