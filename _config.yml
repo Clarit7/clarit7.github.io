@@ -10,7 +10,7 @@ title: .js
 email: intelleej@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Jay's Notes
-url: "http://clarit7.github.io" # the base hostname & protocol for your site
+url: "https://clarit7.github.io" # the base hostname & protocol for your site
 
 baseurl: ""
 permalink: /:title/
@@ -60,8 +60,8 @@ compress_html:
   
 prose:
   rooturl: ''
-  siteurl: 'http://prose.github.io/starter/'
-  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  siteurl: 'https://prose.github.io/starter/'
+  relativeLinks: 'https://prose.github.io/starter/links.jsonp'
   media: 'images'
   ignore:
     - index.md
