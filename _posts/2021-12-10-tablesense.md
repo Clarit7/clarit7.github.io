@@ -53,7 +53,7 @@ Object detection의 가장 보편적인 평가지표는 Intersection-over-Union�
 
 <br/>
 
-$ IoU = \frac{area(B B')}_{area(B B')} $
+$$ IoU = \frac{area(B B)} $$
 
 <br/>
 
@@ -65,7 +65,7 @@ Error-of-Boundary는 예측과 정답 boundary의 최대 절대 오차가 기준
 
 <br/>
 
-$ EoB = max() $
+$$ EoB = max() $$
 
 <br/>
 
