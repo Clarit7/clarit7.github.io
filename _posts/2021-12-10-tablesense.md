@@ -15,6 +15,8 @@ use_math: true
 
 ## Abstract & Problem Statement
 
+<br/>
+
 Spreadsheet table detection은 엑셀 파일 등에서 테이블이 존재하는 영역, 정확히는 top, left, bottom, right 네 방향의 boundary를 감지하는 종류의 과제를 말한다.
 스프레드 시트라는 2차원 좌표계 내에서 bounding box를 추출하는 과제이므로 얼핏 보면 이미지 object detection과 비슷한 느낌이 있다.
 실제로도 저자는 이 문제를 해결하기 위한 base algorithm으로 딥러닝 이미지 처리 분야에서 real-time object detection의 포문을 열었던 모델인 Faster R-CNN을 사용했다.
@@ -48,6 +50,8 @@ Bounding Box라는 것이 어떤 절대적인 기준에 의해 라벨링 된 것
 
 ## IoU vs EoB
 
+<br/>
+
 여기서부턴 bounding box를 편의상 bbox로 줄여 부르겠다. 
 Object detection의 가장 보편적인 평가지표는 Intersection-over-Union이다. 이는 예측 bbox와 실제 bbox의 일치도를 나타내는데, 두 bbox간의 교집합 넓이를 합집합 넓이로 나눈 것이다.
 
@@ -71,4 +75,17 @@ $$ EoB = max() $$
 
 예를 들어, 상/하/좌/우 boundary의 예측값과 정답이 각각 2/0/1/1 셀 만큼씩 차이가 난다면, top-boundary의 오차가 2로 가장 크고, 따라서 EoB는 이 경우 2가 된다.
 덕분에 테이블이 작든 크든 bbox의 boundary 자체가 얼마나 정확하게 예측되는지 알 수 있다.
+
+
+## Datasets & Framework
+
+스프레드 시트 파일을 웹에서 크롤링해 그 중 10220개의 시트에 라벨링을 해 훈련 셋으로 사용하고 이와 겹치지 않는 400개의 시트를 테스트 셋으로 사용했다.
+
+Tablesense는 다음 다섯 단계에 걸쳐 테이블을 추출한다.
+
+1. Cell Featurization
+2. CNN Backbone
+3. Region Proposal Network
+4. Bouding Box Regresssion
+5. Precise Bounding Box Regression
 
