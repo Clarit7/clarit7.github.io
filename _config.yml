@@ -17,7 +17,9 @@ permalink: /:title/
 
 analytics: G-N9CD29WESJ
 disqus-shortname: clarit7-github-io
-
+sitemap:
+    path: sitemap.xml
+    
 # Color schemes
 color-1: '#3B97D3'
 color-2: '#26B99A'
