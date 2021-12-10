@@ -76,16 +76,34 @@ $$ EoB = max() $$
 예를 들어, 상/하/좌/우 boundary의 예측값과 정답이 각각 2/0/1/1 셀 만큼씩 차이가 난다면, top-boundary의 오차가 2로 가장 크고, 따라서 EoB는 이 경우 2가 된다.
 덕분에 테이블이 작든 크든 bbox의 boundary 자체가 얼마나 정확하게 예측되는지 알 수 있다.
 
+<br/>
 
 ## Datasets & Framework
 
+<br/>
+
 스프레드 시트 파일을 웹에서 크롤링해 그 중 10220개의 시트에 라벨링을 해 훈련 셋으로 사용하고 이와 겹치지 않는 400개의 시트를 테스트 셋으로 사용했다.
 
+<br/>
+
 Tablesense는 다음 다섯 단계에 걸쳐 테이블을 추출한다.
+
+<br/>
 
 1. Cell Featurization
 2. CNN Backbone
 3. Region Proposal Network
-4. Bouding Box Regresssion
+4. Bounding Box Regresssion
 5. Precise Bounding Box Regression
 
+<br/>
+
+Cell Featurization은 시트를 텐서로 변환하는 단계이다. 이미지 파일은 한 픽셀에 색상 3채널의 정보를 담고 있지만, 엑셀 파일은 한 셀당 20채널로 나타낸다. 각 채널마다 영문자 비율, 숫자 비율, 입력값 길이, 선 스타일 적용 유무, 배경색, 글자색, 수식 적용 여부 등등의 정보를 담게 된다.
+
+<br/>
+
+이후 CNN Backbone, Region Proposal Network, Bounding Box Regression은 Faster R-CNN의 알고리즘을 그대로 사용한다. 약간의 차이점이 있다면 backbone에서 pooling layer를 제거한것과, RPN의 anchor세트가 base size 8 ~ 4096, ratio 1/256 ~ 256 까지 존재하는 등 다양한 크기와 극단적으로 편향된 비율을 가진 케이스까지 포함한다는 점이다.
+
+<br/>
+
+주목해야 할 부분은 이 모델의 핵심 구조인 PBR(Precise Bounding Box Regression) 모듈이다. BBR모듈의 Regrion of Interest를 기반으로 세부적인 boundary를 보정하는데, 어떤 원리인지 자세히 알아보자.
