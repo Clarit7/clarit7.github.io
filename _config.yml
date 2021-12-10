@@ -15,7 +15,7 @@ url: "http://clarit7.github.io" # the base hostname & protocol for your site
 baseurl: ""
 permalink: /:title/
 
-analytics: UA-83979019-1 
+analytics: G-N9CD29WESJ
 disqus-shortname: clarit7-github-io
 
 # Color schemes
