@@ -114,7 +114,7 @@ $$ 0.0101_{(2)} \times 2^{-255} $$
 
 <br/>
 
-SSE3 명령어셋을 지원하는 x86 CPU 또는 x64 CPU 에서만 사용 가능하다.
+SSE3 명령어셋을 지원하는 x86 CPU 또는 x64 CPU 에서만 사용 가능하다. (x64(64bit)는 x86(32bit)의 하위 호환성을 보장한다.)
 
 <br/>
 
@@ -147,8 +147,8 @@ fi
 
 ### 출처
 
-* https://pytorch.org/docs/stable/generated/torch.set_flush_denormal.html
+* [https://pytorch.org/docs/stable/generated/torch.set_flush_denormal.html](https://pytorch.org/docs/stable/generated/torch.set_flush_denormal.html)
 
-* https://stackoverflow.com/questions/54937154/why-are-denormal-floating-point-values-slower-to-handle
+* [https://stackoverflow.com/questions/54937154/why-are-denormal-floating-point-values-slower-to-handle](https://stackoverflow.com/questions/54937154/why-are-denormal-floating-point-values-slower-to-handle)
 
-* https://unix.stackexchange.com/questions/131954/check-sse3-support-from-bash
+* [https://unix.stackexchange.com/questions/131954/check-sse3-support-from-bash](https://unix.stackexchange.com/questions/131954/check-sse3-support-from-bash)
