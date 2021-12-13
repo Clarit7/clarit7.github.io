@@ -74,7 +74,7 @@ $ \begin{multline}
  \vert\mathrm{row_{left}^\mathit{B}} - \mathrm{row_{left}^\mathit{B'}}\vert, \vert\mathrm{row_{right}^\mathit{B}} - \mathrm{row_{right}^\mathit{B'}}\vert)
 \end{multline} $
 
-$ \mathrm{EoB} = \mathrm{max}(\vert\mathrm{row_{top}^\mathit{B}} - \mathrm{row_{top}^\mathit{B'}}\vert, \vert\mathrm{row_{bottom}^\mathit{B}} - \mathrm{row_{bottom}^\mathit{B'}}\vert, \\ \vert\mathrm{row_{left}^\mathit{B}} - \mathrm{row_{left}^\mathit{B'}}\vert, \vert\mathrm{row_{right}^\mathit{B}} - \mathrm{row_{right}^\mathit{B'}}\vert) $
+$ \mathrm{EoB} = \mathrm{max}(\vert\mathrm{row_{top}^\mathit{B}} - \mathrm{row_{top}^\mathit{B'}}\vert, \vert\mathrm{row_{bottom}^\mathit{B}} - \mathrm{row_{bottom}^\mathit{B'}}\vert, \\* \vert\mathrm{row_{left}^\mathit{B}} - \mathrm{row_{left}^\mathit{B'}}\vert, \vert\mathrm{row_{right}^\mathit{B}} - \mathrm{row_{right}^\mathit{B'}}\vert) $
 
 <br/>
 
