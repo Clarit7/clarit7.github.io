@@ -159,7 +159,7 @@ $x, w$는 각각 box의 중심 $x$좌표와 폭을 나타내고, $y, h$에 대�
 <br/>
 
 $$
-L_\mathrm{reg}(t, t^{*}) = \sum_{i \in \mathrm\{ top, bottom, left, right\}}} R (t_i - t_i^{*})
+L_\mathrm{reg}(t, t^*) = \sum_{i \in \mathrm{\{ top, bottom, left, right\}}} R (t_i - t_i^{*})
 $$
 
 $$
