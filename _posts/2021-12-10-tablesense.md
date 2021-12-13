@@ -17,14 +17,14 @@ use_math: true
 
 <br/>
 
-```html
 <p align="center">
 	<img src="/images/2021/12/10/tables.png" width="800px">
 	<figcaption style="text-align:center; font-size:12px; color:#808080">
 		Table Detection
  	</figcaption>
 </p>
-```
+
+
 
 <br/>
 
