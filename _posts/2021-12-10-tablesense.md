@@ -57,7 +57,7 @@ Object detection의 가장 보편적인 평가지표는 Intersection-over-Union�
 
 <br/>
 
-$ \mathrm{IoU} = \frac{\mathrm{area}(B \cap B')}{\mathrm{area}(B \cup B')} $
+$ \mathrm{IoU} = \displaystyle\frac{\mathrm{area}(B \cap B')}{\mathrm{area}(B \cup B')} $
 
 <br/>
 
@@ -69,7 +69,7 @@ Error-of-Boundary는 예측과 정답 boundary의 최대 절대 오차가 기준
 
 <br/>
 
-$ \mathrm{EoB} = \mathrm{max}(\vert\mathrm{row}_\mathrm{top}^B - \mathrm{row}_\mathrm{top}^{B'}\vert, \vert\mathrm{row}_\mathrm{top}^B - \mathrm{row}_\mathrm{top}^{B'}\vert, \vert\mathrm{row}_\mathrm{top}^B - \mathrm{row}_\mathrm{top}^{B'}\vert, \vert\mathrm{row}_\mathrm{top}^B - \mathrm{row}_\mathrm{top}^{B'}\vert) $
+$ \mathrm{EoB} = \mathrm{max}(\vert\mathrm{row_{top}}^B - \mathrm{row_{top}}^{B'}\vert, \vert\mathrm{row_{bottom}}^B - \mathrm{row_{bottom}}^{B'}\vert, \vert\mathrm{row_{left}}^B - \mathrm{row_{left}}^{B'}\vert, \vert\mathrm{row_{right}}^B - \mathrm{row_{right}}^{B'}\vert) $
 
 <br/>
 
