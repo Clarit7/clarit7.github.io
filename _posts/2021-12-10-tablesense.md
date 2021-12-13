@@ -53,11 +53,11 @@ Bounding Box라는 것이 어떤 절대적인 기준에 의해 라벨링 된 것
 <br/>
 
 여기서부턴 bounding box를 편의상 bbox로 줄여 부르겠다. 
-Object detection의 가장 보편적인 평가지표는 Intersection-over-Union이다. 이는 예측 bbox와 실제 bbox의 일치도를 나타내는데, 두 bbox간의 교집합 넓이를 합집합 넓이로 나눈 것이다.
+Object detection의 가장 보편적인 평가지표는 Intersection-over-Union이다. 이는 예측 bbox $(B)$와 실제 bbox $(B')$의 일치도를 나타내는데, 두 bbox간의 교집합 넓이를 합집합 넓이로 나눈 것이다.
 
 <br/>
 
-$ IoU = \frac{area(B \cap B)}{area(B \cup B)} $
+$ \mathrm{IoU} = \frac{\mathrm{area}(B \cap B')}{\mathrm{area}(B \cup B')} $
 
 <br/>
 
@@ -69,7 +69,7 @@ Error-of-Boundary는 예측과 정답 boundary의 최대 절대 오차가 기준
 
 <br/>
 
-$ EoB = max() $
+$ \mathrm{EoB} = \mathrm{max}(\vert\mathrm{row}_\mathrm{top}^B - \mathrm{row}_\mathrm{top}^{B'}\vert, \vert\mathrm{row}_\mathrm{top}^B - \mathrm{row}_\mathrm{top}^{B'}\vert, \vert\mathrm{row}_\mathrm{top}^B - \mathrm{row}_\mathrm{top}^{B'}\vert, \vert\mathrm{row}_\mathrm{top}^B - \mathrm{row}_\mathrm{top}^{B'}\vert) $
 
 <br/>
 
@@ -123,7 +123,7 @@ BBR 모듈로 출력된 RoI는 부정확한 boundary를 가지고 있기 때문�
 
 <br/>
 
-$ L_{reg}(t, t^{\*}) = \sum_{i} smooth_{L_1} (t_i - t_i^{\*}) $
+$ L_\mathrm{reg}(t, t^{\*}) = \displaystyle\sum_{i \in \{ x, y, w, h\}} \mathrm{smooth}_{L_1} (t_i - t_i^{\*}) $
 
 <br/>
 
