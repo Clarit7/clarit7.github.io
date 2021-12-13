@@ -143,9 +143,15 @@ fi
 
 다른 아키텍쳐의 CPU에서도 비정규값 처리 기능이 있고, 범용적으로 관련 내용에 대해 알아보려면 'Flush To Zero'라는 키워드로 검색해보면 된다.
 
+<br/>
 
+---
+
+<br/>
 
 ### 출처
+
+<br/>
 
 * [https://pytorch.org/docs/stable/generated/torch.set_flush_denormal.html](https://pytorch.org/docs/stable/generated/torch.set_flush_denormal.html)
 
