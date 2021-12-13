@@ -9,7 +9,7 @@ tags:
 use_math: true
 ---
 
-**TableSense: Spreadsheet Table Detection with Convolutional Neural Networks** [논문](https://www.microsoft.com/en-us/research/publication/tablesense-spreadsheet-table-detection-with-convolutional-neural-networks/) 
+**TableSense: Spreadsheet Table Detection with Convolutional Neural Networks** [논문](https://www.microsoft.com/en-us/research/publication/tablesense-spreadsheet-table-detection-with-convolutional-neural-networks/) [데이터셋](https://github.com/microsoft/TableSense)
 
 <br/>
 
