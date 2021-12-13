@@ -41,11 +41,12 @@ Bounding box라는 것이 완전히 절대적인 기준에 의해 라벨링 된 
 <br/>
 
 <p align="center">
-	<img src="/images/2021/12/10/tables.png" width="800px">
+	<img src="/images/2021/12/10/bbox.png" width="800px">
 	<figcaption style="text-align:center; font-size:12px; color:#808080">
 		Ground Truth vs Predicted Bbox
  	</figcaption>
 </p>
+
 
 <br/>
 
