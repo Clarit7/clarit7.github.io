@@ -69,12 +69,12 @@ Error-of-Boundary는 예측과 정답 boundary의 최대 절대 오차가 기준
 
 <br/>
 
-$ \mathrm{EoB} = row_{top}^{B}\mathrm{max}(\vert\mathrm{row_{top}}^B - \mathrm{row_{top}}^{B'}\vert, \vert\mathrm{row_{bottom}}^B - \mathrm{row_{bottom}}^{B'}\vert, \vert\mathrm{row_{left}}^B - \mathrm{row_{left}}^{B'}\vert, \vert\mathrm{row_{right}}^B - \mathrm{row_{right}}^{B'}\vert) $
+$ \mathrm{EoB} = \mathrm{max}(\vert\mathrm{row}_\mathrm{top}^{B} - \mathrm{row}_\mathrm{top}^{B'}\vert, \vert\mathrm{row}_\mathrm{bottom}^B - \mathrm{row}_\mathrm{bottom}^{B'}\vert, \vert\mathrm{row}_\mathrm{left}^B - \mathrm{row}_\mathrm{left}^{B'}\vert, \vert\mathrm{row}_\mathrm{right}^B - \mathrm{row}_\mathrm{right}^{B'}\vert) $
 
 <br/>
 
 예를 들어, 상/하/좌/우 boundary의 예측값과 정답이 각각 2/0/1/1 셀 만큼씩 차이가 난다면, top-boundary의 오차가 2로 가장 크고, 따라서 EoB는 이 경우 2가 된다.
-덕분에 테이블이 작든 크든 bbox의 boundary 자체가 얼마나 정확하게 예측되는지 알 수 있다.
+덕분에 테이블이 크기와 상관 없이 영역이 아닌 boundary를 기준으로 평가할 수 있다.
 
 <br/>
 
