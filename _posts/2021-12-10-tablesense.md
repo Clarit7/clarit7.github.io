@@ -20,7 +20,7 @@ use_math: true
 Spreadsheet table detection은 엑셀 파일 등에서 테이블이 존재하는 영역, 정확히는 top, left, bottom, right 네 방향의 boundary를 감지하는 종류의 과제를 말한다.
 스프레드 시트라는 2차원 좌표계 내에서 bounding box를 추출하는 과제이므로 얼핏 보면 이미지 object detection과 비슷한 느낌이 있다.
 실제로도 저자는 이 문제를 해결하기 위한 base algorithm으로 딥러닝 이미지 처리 분야에서 real-time object detection의 포문을 열었던 모델인 Faster R-CNN을 사용했다.
-그러나 이 과제는 object detection과 근본적인 차이점이 존재한다.
+그러나 이 과제는 object detection과 결정적인 차이점이 존재한다.
 
 <br/>
 
@@ -33,7 +33,7 @@ Bounding Box라는 것이 어떤 절대적인 기준에 의해 라벨링 된 것
 
 <br/>
 
-하지만 엑셀 파일에서 테이블을 추출하는 작업은 한 셀의 오차도 없이 정확해야 한다. 이미지 처리에 비교하자면 1픽셀의 오차도 허용하면 안되는 상황인 것이다.
+하지만 엑셀 파일에서 테이블을 추출하는 작업은 가능한 한 셀의 오차도 없이 정확해야 한다. 이미지 처리에 비교하자면 1픽셀의 오차도 허용하면 안되는 상황인 것이다.
 만약 테이블의 가장 우측 또는 최하단에 중요한 정보가 포함되어 있고, bounding box에서 이런 row나 column만 제외된다면 추출된 테이블 활용에 문제가 생길 것이다.
 
 <br/>
@@ -57,7 +57,7 @@ Object detection의 가장 보편적인 평가지표는 Intersection-over-Union�
 
 <br/>
 
-$$ IoU = \frac{area(B B)} $$
+$ IoU = \frac{area(B B)} $
 
 <br/>
 
@@ -69,7 +69,7 @@ Error-of-Boundary는 예측과 정답 boundary의 최대 절대 오차가 기준
 
 <br/>
 
-$$ EoB = max() $$
+$ EoB = max() $
 
 <br/>
 
@@ -102,7 +102,7 @@ Cell Featurization은 시트를 텐서로 변환하는 단계이다. 이미지 �
 
 <br/>
 
-이후 CNN Backbone, Region Proposal Network, Bounding Box Regression은 Faster R-CNN의 알고리즘을 그대로 사용한다. 약간의 차이점이 있다면 backbone에서 pooling layer를 제거한것과, RPN의 anchor세트가 base size 8 ~ 4096, ratio 1/256 ~ 256 까지 존재하는 등 다양한 크기와 극단적으로 편향된 비율을 가진 케이스까지 포함한다는 점이다.
+이후 CNN backbone, Region Proposal Network, Bounding Box Regression은 Faster R-CNN의 알고리즘을 그대로 사용한다. 약간의 차이점이 있다면 resnet backbone에서 pooling layer를 제거한것과, RPN의 anchor세트가 base size 8 ~ 4096, ratio 1/256 ~ 256 까지 존재하는 등 다양한 크기와 극단적으로 편향된 비율을 가진 케이스까지 포함한다는 점이다.
 
 <br/>
 
@@ -110,7 +110,32 @@ Cell Featurization은 시트를 텐서로 변환하는 단계이다. 이미지 �
 
 <br/>
 
-BBR 모듈로 출력된 RoI는 부정확한 boundary를 가지고 있기 때문에, 이 boundary를 기준으로 receptive field를 새로 만들어 예측값과 정답값의 차이를 구하게 된다.
-좌, 우 boundary에 대해서는 수평방향으로 2k,, 상, 하 boundary에 대해서는 수직방향으로 2k의 사이즈를 가지는 좁은 receptive 필드는 예측 boundary와 실제 boundary의 오차를 최소화하는데 적합하다. 논문에선 적절한 k를 7로 설정했다.
- 
-네 방향의 receptive field로부터 추출된 feature map은 RoIAlign을 통해 14 * 14 크기의 텐서로 고정되고, regression연산 이후 세부적인 보정값을 출력하게 된다. 특히 좌, 우 boundary에 대해선 RoIAlign을 거치더라도 수평방향 feature의 정보 손실이 없고, 상, 하 boundary에 대해선 수직방향 정보의 손실이 없다. PBR모듈의 출력값을 통해 BBR모듈이 출력한 RoI를 보정하게 되면 경계 오차가 거의 없는 bbox를 얻을 수 있다.
+BBR 모듈로 출력된 RoI는 부정확한 boundary를 가지고 있기 때문에, 이 boundary를 기준으로 receptive field를 새로 설정해 예측값과 정답값의 차이를 구하게 된다.
+좌, 우 boundary에 대해서는 수평방향으로 2k, 상/하 boundary에 대해서는 수직방향으로 2k의 사이즈를 가지는 좁은 receptive 필드는 예측 boundary와 실제 boundary의 오차를 최소화하는데 적합하다. 논문에선 적절한 k를 7로 설정했다. 네 방향의 receptive field로부터 추출된 feature map은 RoIAlign을 통해 2k * 2k 크기의 텐서로 고정되고, regression 이후 세부적인 보정값을 출력하게 된다. Receptive field의 폭 또는 높이와 RoIAlign 후의 폭 또는 높이가 같기 때문에 정보의 손실이 거의 없게 된다. PBR모듈의 출력값을 통해 BBR모듈이 출력한 RoI를 보정하게 되면 경계 오차가 매우 적은 bbox를 얻을 수 있다.
+
+<br/>
+
+## Target & Loss Function
+
+<br/>
+
+기존 Faster R-CNN의 손실함수는 다음과 같다.
+
+<br/>
+
+$ L_{reg}(t, t^*) = \sum_{i} smooth_{L_1} (t_i - t_i^*) $
+
+<br/>
+
+## Evaluation Results
+
+<br/>
+
+<br/>
+
+## Implementation
+
+<br/>
+
+오픈 소스로 여러 구현이 존재하는 Faster R-CNN 코드를 기반으로 이 Tablesense를 구현하면서 몇 가지 어려움에 부딛혔고, 약간의 수정으로 해결했다.
+
