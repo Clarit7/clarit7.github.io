@@ -17,6 +17,17 @@ use_math: true
 
 <br/>
 
+```html
+<p align="center">
+	<img src="/images/2021/12/10/tables.png" width="800px">
+	<figcaption style="text-align:center; font-size:12px; color:#808080">
+		Table Detection
+ 	</figcaption>
+</p>
+```
+
+<br/>
+
 Spreadsheet table detection은 엑셀 파일 등에서 테이블이 존재하는 영역, 정확히는 top, left, bottom, right 네 방향의 boundary를 감지하는 종류의 과제를 말한다.
 스프레드 시트라는 2차원 좌표계 내에서 bounding box를 추출하는 과제이므로 얼핏 보면 이미지 object detection과 비슷한 느낌이 있다.
 실제로도 저자는 이 문제를 해결하기 위한 base algorithm으로 딥러닝 이미지 처리 분야에서 real-time object detection의 포문을 열었던 모델인 Faster R-CNN을 사용했다.
@@ -29,7 +40,12 @@ Bounding box라는 것이 완전히 절대적인 기준에 의해 라벨링 된 
 
 <br/>
 
--그림-
+<p align="center">
+	<img src="/images/2021/12/10/tables.png" width="800px">
+	<figcaption style="text-align:center; font-size:12px; color:#808080">
+		Ground Truth vs Predicted Bbox
+ 	</figcaption>
+</p>
 
 <br/>
 
@@ -89,6 +105,17 @@ EoB는 예측과 정답 boundary의 최대 절대 오차가 기준이다. 예를
 
 <br/>
 
+<p align="center">
+	<img src="/images/2021/12/10/framework.png" width="800px">
+	<figcaption style="text-align:center; font-size:12px; color:#808080">
+		TableSense Framework
+ 	</figcaption>
+</p>
+
+
+
+<br/>
+
 Tablesense는 다음 다섯 단계에 걸쳐 테이블을 추출한다.
 
 <br/>
@@ -110,6 +137,15 @@ Cell Featurization은 시트를 텐서로 변환하는 단계이다. 이미지 �
 <br/>
 
 주목해야 할 부분은 이 모델의 핵심 구조인 PBR(Precise Bounding Box Regression) 모듈이다. BBR모듈의 Regrion of Interest를 기반으로 세부적인 boundary를 보정하는데, 어떤 원리인지 자세히 알아보자.
+
+<br/>
+
+<p align="center">
+	<img src="/images/2021/12/10/pbr.png" width="800px">
+	<figcaption style="text-align:center; font-size:12px; color:#808080">
+		Precise Bounding Box Regression module
+ 	</figcaption>
+</p>
 
 <br/>
 
@@ -204,7 +240,12 @@ $t_i - t_i^\*$를 계산해 보면 anchor box에 관련된 변수들은 사라�
 
 <br/>
 
--그림-
+<p align="center">
+	<img src="/images/2021/12/10/result.png" width="800px">
+	<figcaption style="text-align:center; font-size:12px; color:#808080">
+		Baseline Comparison
+ 	</figcaption>
+</p>
 
 <br/>
 
