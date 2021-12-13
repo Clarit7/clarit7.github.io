@@ -20,12 +20,12 @@ use_math: true
 Spreadsheet table detection은 엑셀 파일 등에서 테이블이 존재하는 영역, 정확히는 top, left, bottom, right 네 방향의 boundary를 감지하는 종류의 과제를 말한다.
 스프레드 시트라는 2차원 좌표계 내에서 bounding box를 추출하는 과제이므로 얼핏 보면 이미지 object detection과 비슷한 느낌이 있다.
 실제로도 저자는 이 문제를 해결하기 위한 base algorithm으로 딥러닝 이미지 처리 분야에서 real-time object detection의 포문을 열었던 모델인 Faster R-CNN을 사용했다.
-그러나 이 과제는 object detection과 결정적인 차이점이 존재한다.
+그러나 이 과제는 이미지의 object detection과 결정적인 차이점이 존재한다.
 
 <br/>
 
-먼저, object detection은 평가지표가 Intersection-over-Union(IoU)라는 것이다.
-Bounding Box라는 것이 어떤 절대적인 기준에 의해 라벨링 된 것이 아닌 인간의 시각을 기준으로 임의로 부여된 것이다 보니, 아래 그림과 같이 예측 bounding box가 ground truth와 약간의 차이가 있더라도 IoU는 충분히 높게 측정되고, 인간의 눈으로 보기에도 정답이라고 인정할 수준이 된다.
+먼저, 이미지 object detection은 평가지표가 Intersection-over-Union(IoU)라는 것이다.
+Bounding box라는 것이 어떤 절대적인 기준에 의해 라벨링 된 것이 아닌 인간의 시각을 기준으로 임의로 부여된 것이다 보니, 아래 그림과 같이 예측 bounding box가 ground truth와 약간의 차이가 있더라도 IoU는 충분히 높게 측정되고, 인간의 눈으로 보기에도 정답이라고 인정할 수준이 된다.
 
 <br/>
 
@@ -52,7 +52,7 @@ Bounding Box라는 것이 어떤 절대적인 기준에 의해 라벨링 된 것
 
 <br/>
 
-여기서부턴 bounding box를 편의상 bbox로 줄여 부르겠다. 
+이후부턴 bounding box를 편의상 bbox로 줄여 부르겠다. 
 Object detection의 가장 보편적인 평가지표는 Intersection-over-Union이다. 이는 예측 bbox $(B)$와 실제 bbox $(B')$의 일치도를 나타내는데, 두 bbox간의 교집합 넓이를 합집합 넓이로 나눈 것이다.
 
 <br/>
@@ -63,11 +63,7 @@ $$
 
 <br/>
 
-이는 bbox의 절대적인 크기와 상관 없이 각 bbox간 오차의 상대적 비율만 고려한다. 따라서 큰 bbox간 IoU를 구할 수록 작은 절대 오차는 무시된다. 같은 크기지만 해상도가 다른 20pixel x 20pixel 이미지와 1000pixel x 1000pixel 이미지가 있을 때, 20 x 20 해상도 이미지에선 한쪽 boundary가 5픽셀 차이가 나면 인간의 시각 기준으로 매우 큰 차이로 느껴지겠지만, 1000 x 1000 해상도 이미지에선 한쪽 boundary가 5픽셀 차이나도 인간의 시각은 문제 없이 bbox를 정답으로 인식한다. 따라서 전체 영역이 커질수록 작은 차이가 무시되는 IoU는 엑셀 테이블 추출의 평가지표로 사용하기에 매우 부적합하기에 저자들은 새로운 평가지표를 제시한다.
-
-<br/>
-
-Error-of-Boundary는 예측과 정답 boundary의 최대 절대 오차가 기준이다.
+이는 bbox의 절대적인 크기와 상관 없이 각 bbox간 오차의 상대적 비율만 고려한다. 따라서 큰 bbox간 IoU를 구할 수록 작은 절대 오차는 무시된다. 같은 크기지만 해상도가 다른 20pixel x 20pixel 이미지와 1000pixel x 1000pixel 이미지가 있을 때, 20 x 20 해상도 이미지에선 한쪽 boundary가 5픽셀 차이가 나면 인간의 시각 기준으로 매우 큰 차이로 느껴지고 실제로 IoU도 작게 측정겠지만, 1000 x 1000 해상도 이미지에선 한쪽 boundary가 5픽셀 차이나도 인간의 시각은 문제 없이 bbox를 정답으로 인식하고 IoU역시 높게 측정된다. 따라서 전체 영역이 커질수록 작은 차이가 무시되는 IoU는 엑셀 테이블 추출의 평가지표로 사용하기에 매우 부적합하기에 저자들은 새로운 평가지표인 Error-of-Boundary를 제시한다.
 
 <br/>
 
@@ -81,8 +77,7 @@ $$
 
 <br/>
 
-예를 들어, 상/하/좌/우 boundary의 예측값과 정답이 각각 2/0/1/1 셀 만큼씩 차이가 난다면, top-boundary의 오차가 2로 가장 크고, 따라서 EoB는 이 경우 2가 된다.
-덕분에 테이블이 크기와 상관 없이 영역이 아닌 boundary를 기준으로 평가할 수 있다.
+EoB는 예측과 정답 boundary의 최대 절대 오차가 기준이다. 예를 들어, 상/하/좌/우 boundary의 예측값과 정답이 각각 2/0/1/1 셀 만큼씩 차이가 난다면, top-boundary의 오차가 2로 가장 크고, 따라서 EoB는 이 경우 2가 된다. 덕분에 테이블이 크기와 상관 없이 영역이 아닌 boundary를 기준으로 평가할 수 있다.
 
 <br/>
 
@@ -120,6 +115,10 @@ Cell Featurization은 시트를 텐서로 변환하는 단계이다. 이미지 �
 
 BBR 모듈로 출력된 RoI는 부정확한 boundary를 가지고 있기 때문에, 이 boundary를 기준으로 receptive field를 새로 설정해 예측값과 정답값의 차이를 구하게 된다.
 좌, 우 boundary에 대해서는 수평방향으로 $2k$, 상/하 boundary에 대해서는 수직방향으로 $2k$의 사이즈를 가지는 좁은 receptive 필드는 예측 boundary와 실제 boundary의 오차를 최소화하는데 적합하다. 논문에선 적절한 $k$를 7로 설정했다. $k$가 너무 크면 여러개의 작은 표가 가까이 붙어있는 경우 정답을 예측하는데 방해가 되고, 너무 작으면 receptive field가 ground truth boudary를 포함하지 못할 확률이 높아지기 때문이다. 네 방향의 receptive field로부터 추출된 feature map은 RoIAlign을 통해 $2k \times 2k$ 크기의 텐서로 고정되고, regression 이후 세부적인 보정값을 출력하게 된다. Receptive field의 폭 또는 높이와 RoIAlign 후의 폭 또는 높이가 같기 때문에 정보의 손실이 거의 없게 된다. PBR모듈의 출력값을 통해 BBR모듈이 출력한 RoI를 보정하게 되면 경계 오차가 매우 적은 bbox를 얻을 수 있다.
+
+<br/>
+
+-그림, Receptive field -> RoIAlign -> Regression -
 
 <br/>
 
@@ -187,6 +186,21 @@ $t_i - t_i^\*$를 계산해 보면 anchor box에 관련된 변수들은 사라�
 ## Evaluation Results
 
 <br/>
+
+다음과 같은 baseline 모델들과의 비교를 진행했다.
+
+* Region-growth : 특정 셀부터 8방향으로 접한 모든 셀로 영역을 가능한 확장시키고 확장이 끝났을 때의 영역을 테이블로 추출한다.
+* Region-growth + SVM : Regtion-growth 방식으로 추출한 테이블이 실제 테이블인지 아닌지 예측하는 classifier를 학습시킨다.
+* Mask R-CNN : 당시에 sota를 달성한 object detection 모델이다.
+* YOLO-v3 : 당시에 sota를 달성한 real time object detection 모델이다.
+* Faster R-CNN : 당시에 sota를 달성한 real time object detection 모델이고 TableSense의 base 알고리즘이다. YOLO보단 느린 대신 정확도는 조금 더 높다.
+
+측정은 EoB-0와 EoB-2를 기준으로 했다. EoB-0는 EoB가 0인 경우만 예측 성공으로 인정하는 것이고, EoB-2는 2이하 까지 예측 성공으로 인정하는 것이다.
+결과는 논문에 나와 있듯이 TableSense가 다른 baseline에 비해 압도적으로 높은 recall/precision을 기록했다.
+
+-그림-
+
+또한 cell featurization 과정에서 특정 feature를 제외시켰을 때보다 모든 feature를 전부 사용했을때 성능이 가장 좋았고, 저자들이 효율적인 라벨링을 위해 도입한 active learning의 효과도 증명되었다고 한다.
 
 <br/>
 
