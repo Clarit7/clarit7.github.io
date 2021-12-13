@@ -151,7 +151,7 @@ Cell Featurization은 시트를 텐서로 변환하는 단계이다. 이미지 �
 <br/>
 
 BBR 모듈로 출력된 RoI는 부정확한 boundary를 가지고 있기 때문에, 이 boundary를 기준으로 receptive field를 새로 설정해 예측값과 정답값의 차이를 구하게 된다.
-좌, 우 boundary에 대해서는 수평방향으로 $2k$, 상/하 boundary에 대해서는 수직방향으로 $2k$의 사이즈를 가지는 좁은 receptive 필드는 예측 boundary와 실제 boundary의 오차를 최소화하는데 적합하다. 논문에선 적절한 $k$를 7로 설정했다. $k$가 너무 크면 여러개의 작은 표가 가까이 붙어있는 경우 정답을 예측하는데 방해가 되고, 너무 작으면 receptive field가 ground truth boudary를 포함하지 못할 확률이 높아지기 때문이다. 네 방향의 receptive field로부터 추출된 feature map은 RoIAlign을 통해 $2k \times 2k$ 크기의 텐서로 고정되고, regression 이후 세부적인 보정값을 출력하게 된다. Receptive field의 폭 또는 높이와 RoIAlign 후의 폭 또는 높이가 같기 때문에 정보의 손실이 거의 없게 된다. PBR모듈의 출력값을 통해 BBR모듈이 출력한 RoI를 보정하게 되면 경계 오차가 매우 적은 bbox를 얻을 수 있다.
+좌, 우 boundary에 대해서는 수평방향으로 $2k$, 상/하 boundary에 대해서는 수직방향으로 $2k$의 사이즈를 가지는 좁은 receptive 필드는 예측 boundary와 실제 boundary의 오차를 최소화하는데 적합하다. 논문에선 적절한 $k$를 7로 설정했다. $k$가 너무 크면 여러개의 작은 표가 가까이 붙어있는 경우 정답을 예측하는데 방해가 되고, 너무 작으면 receptive field가 ground truth boundary를 포함하지 못할 확률이 높아지기 때문이다. 네 방향의 receptive field로부터 추출된 feature map은 RoIAlign을 통해 $2k \times 2k$ 크기의 텐서로 고정되고, regression 이후 세부적인 보정값을 출력하게 된다. Receptive field의 폭 또는 높이와 RoIAlign 후의 폭 또는 높이가 같기 때문에 정보의 손실이 거의 없게 된다. PBR모듈의 출력값을 통해 BBR모듈이 출력한 RoI를 보정하게 되면 경계 오차가 매우 적은 bbox를 얻을 수 있다.
 
 <br/>
 
