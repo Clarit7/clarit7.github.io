@@ -29,7 +29,6 @@ author-about: 'Junior programmer, works in AI Lab Unit, Hana Bank'
 
 # Build settings
 markdown: kramdown
-markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
