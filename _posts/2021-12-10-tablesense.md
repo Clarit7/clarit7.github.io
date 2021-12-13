@@ -25,7 +25,7 @@ Spreadsheet table detection은 엑셀 파일 등에서 테이블이 존재하는
 <br/>
 
 먼저, 이미지 object detection은 평가지표가 Intersection-over-Union(IoU)라는 것이다.
-Bounding box라는 것이 어떤 절대적인 기준에 의해 라벨링 된 것이 아닌 인간의 시각을 기준으로 임의로 부여된 것이다 보니, 아래 그림과 같이 예측 bounding box가 ground truth와 약간의 차이가 있더라도 IoU는 충분히 높게 측정되고, 인간의 눈으로 보기에도 정답이라고 인정할 수준이 된다.
+Bounding box라는 것이 완전히 절대적인 기준에 의해 라벨링 된 것이 아닌(비록 일관성 있는 라벨링을 가능한 유지하려는 노력은 있었겠지만) 인간의 시각을 기준으로 임의로 부여된 것이다 보니, 아래 그림과 같이 예측 bounding box가 ground truth와 약간의 차이가 있더라도 IoU는 충분히 높게 측정되고, 인간의 눈으로 보기에도 정답이라고 인정할 수준이 된다.
 
 <br/>
 
@@ -43,7 +43,7 @@ Bounding box라는 것이 어떤 절대적인 기준에 의해 라벨링 된 것
 
 <br/>
 
-저자는 위 문제를 해결하기 위해 새로운 모델 구조와 평가방법을 제시했고, 관련 데이터셋을 구축하는 성과를 올렸다.
+저자는 위 문제를 해결하기 위해 새로운 모델 구조와 평가방법, 학습 방법을 제시했고, 관련 데이터셋을 구축하는 성과를 올렸다.
 비록 이 분야 자체가 사람들의 관심도가 높은 편은 아니지만, 논문은 엑셀의 본고장 마이크로소프트의 연구진들에 의해 작성됐고 연구진들의 후속 논문에서도 이 Tablesense 논문이 꾸준하게 사용되고 있기 때문에 한번쯤 볼만한 논문이다.
 
 <br/>
@@ -142,8 +142,8 @@ $$
 
 $$
 \begin{align*}
-&t_x = (x - x_a) / w_a, t_w = \log(w/w_a) \\
-&t_x^* = (x^* - x_a) / w_a, t_w^a = \log(w^*/w_a)
+&t_x = (x - x_a) / w_a,\quad t_w = \log(w/w_a) \\
+&t_x^* = (x^* - x_a) / w_a,\quad t_w^a = \log(w^*/w_a)
 \end{align*}
 $$
 
@@ -172,8 +172,8 @@ $$
 
 $$
 \begin{align*}
-&t_{left} = x - x_a - w/2, t_{right} = x - x_a + w/2 \\
-&t_{left}^* = x^* - x_a - w^*/2, t^*_{right} = x^* - x_a + w^*/2
+&t_{left} = x - x_a - w/2,\quad t_{right} = x - x_a + w/2 \\
+&t_{left}^* = x^* - x_a - w^*/2,\quad t^*_{right} = x^* - x_a + w^*/2
 \end{align*}
 $$
 
@@ -189,24 +189,28 @@ $t_i - t_i^\*$를 계산해 보면 anchor box에 관련된 변수들은 사라�
 
 다음과 같은 baseline 모델들과의 비교를 진행했다.
 
+<br/>
+
 * Region-growth : 특정 셀부터 8방향으로 접한 모든 셀로 영역을 가능한 확장시키고 확장이 끝났을 때의 영역을 테이블로 추출한다.
 * Region-growth + SVM : Regtion-growth 방식으로 추출한 테이블이 실제 테이블인지 아닌지 예측하는 classifier를 학습시킨다.
 * Mask R-CNN : 당시에 sota를 달성한 object detection 모델이다.
 * YOLO-v3 : 당시에 sota를 달성한 real time object detection 모델이다.
 * Faster R-CNN : 당시에 sota를 달성한 real time object detection 모델이고 TableSense의 base 알고리즘이다. YOLO보단 느린 대신 정확도는 조금 더 높다.
 
+<br/>
+
 측정은 EoB-0와 EoB-2를 기준으로 했다. EoB-0는 EoB가 0인 경우만 예측 성공으로 인정하는 것이고, EoB-2는 2이하 까지 예측 성공으로 인정하는 것이다.
 결과는 논문에 나와 있듯이 TableSense가 다른 baseline에 비해 압도적으로 높은 recall/precision을 기록했다.
 
+<br/>
+
 -그림-
 
-또한 cell featurization 과정에서 특정 feature를 제외시켰을 때보다 모든 feature를 전부 사용했을때 성능이 가장 좋았고, 저자들이 효율적인 라벨링을 위해 도입한 active learning의 효과도 증명되었다고 한다.
+<br/>
+
+또한 cell featurization 과정에서 특정 feature를 제외시켰을 때보다 모든 feature를 전부 사용했을때 성능이 가장 좋았다고 한다.
 
 <br/>
 
-## Implementation
-
-<br/>
-
-오픈 소스로 여러 구현이 존재하는 Faster R-CNN 코드를 기반으로 이 Tablesense를 구현하면서 몇 가지 어려움에 부딛혔고, 약간의 수정으로 해결했다.
+모델이 훈련 중 스스로 불확실한 데이터에 대해서만 사람에게 라벨링을 요구하고 특정 조건을 만족하는 데이터는 스스로 라벨링 하도록 하는 Active Learning은 훈련 횟수가 증가함에 따라 오류가 점차 줄어드는 경향을 보임으로 제시한 학습법의 효율성을 입증했다고 한다.
 
