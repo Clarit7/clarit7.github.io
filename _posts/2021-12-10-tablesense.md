@@ -57,7 +57,7 @@ Object detection의 가장 보편적인 평가지표는 Intersection-over-Union�
 
 <br/>
 
-$ \mathrm{IoU} = \displaystyle\frac{\mathrm{area}(B \cap B')}{\mathrm{area}(B \cup B')} $
+$$ \mathrm{IoU} = \displaystyle\frac{\mathrm{area}(B \cap B')}{\mathrm{area}(B \cup B')} $$
 
 <br/>
 
