@@ -69,7 +69,7 @@ Error-of-Boundary는 예측과 정답 boundary의 최대 절대 오차가 기준
 
 <br/>
 
-$ \mathrm{EoB} = row^{B}_{top}\mathrm{max}(\vert\mathrm{row_{top}}^B - \mathrm{row_{top}}^{B'}\vert, \vert\mathrm{row_{bottom}}^B - \mathrm{row_{bottom}}^{B'}\vert, \vert\mathrm{row_{left}}^B - \mathrm{row_{left}}^{B'}\vert, \vert\mathrm{row_{right}}^B - \mathrm{row_{right}}^{B'}\vert) $
+$ \mathrm{EoB} = row_{top}^{B}\mathrm{max}(\vert\mathrm{row_{top}}^B - \mathrm{row_{top}}^{B'}\vert, \vert\mathrm{row_{bottom}}^B - \mathrm{row_{bottom}}^{B'}\vert, \vert\mathrm{row_{left}}^B - \mathrm{row_{left}}^{B'}\vert, \vert\mathrm{row_{right}}^B - \mathrm{row_{right}}^{B'}\vert) $
 
 <br/>
 
