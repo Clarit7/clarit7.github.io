@@ -120,7 +120,7 @@ SSE3 명령어셋을 지원하는 x86 CPU 또는 x64 CPU 에서만 사용 가능
 
 CPU 아키텍쳐 확인
 
-```
+```bash
 $ arch
 >>> x86-64
 ```
@@ -129,14 +129,13 @@ $ arch
 
 SSE3 지원 확인
 
-```
+```bash
 $ grep 'sse3\|pni' /proc/cpuinfo > /dev/null
 if [ $? -eq 0 ];  then
         echo "Supported!"
 else
         echo "Not supported!"
 fi
-
 >>> "Supported!"
 ```
 
