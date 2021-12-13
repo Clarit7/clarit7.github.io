@@ -163,8 +163,8 @@ $$
 
 $$
 R(x) = \begin{cases}
-      0.5x^2, & if \vert x \vert < k\\
-      0.5k^2, & otherwise
+      0.5x^2, & \mathrm{if} \: \vert x \vert < k\\
+      0.5k^2, & \mathrm{otherwise}
     \end{cases}
 $$
 
