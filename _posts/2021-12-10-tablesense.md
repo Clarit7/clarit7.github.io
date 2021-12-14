@@ -216,6 +216,10 @@ $t_i - t_i^\*$를 계산해 보면 anchor box에 관련된 변수들은 사라�
 
 <br/>
 
+모든 손실함수는 역전파 전에 더해진다. 기본적으로 PBR 모듈만으론 Region Proposal Network의 안정적인 훈련을 기대할 수 없기 때문에 BBR모듈의 smooth L1 함수도 버려지지 않고 여전히 사용된다.
+
+<br/>
+
 ## Evaluation Results
 
 <br/>
