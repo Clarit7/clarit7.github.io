@@ -6,7 +6,7 @@
     @extend %vertical-rhythm;
 
     .highlighter-rouge & {
-  background: #FCF3CF;
+  background: #1A3A5B;
     }
 
     .c     { color: #998; font-style: italic } // Comment
@@ -17,15 +17,15 @@
     .cp    { color: #999; font-weight: bold } // Comment.Preproc
     .c1    { color: #998; font-style: italic } // Comment.Single
     .cs    { color: #999; font-weight: bold; font-style: italic } // Comment.Special
-    .gd    { color: #000;} // Generic.Deleted
-    .gd .x { color: #000;} // Generic.Deleted.Specific
+    .gd    { color: #fff;} // Generic.Deleted
+    .gd .x { color: #fff;} // Generic.Deleted.Specific
     .ge    { font-style: italic } // Generic.Emph
     .gr    { color: #a00 } // Generic.Error
     .gh    { color: #999 } // Generic.Heading
-    .gi    { color: #000; } // Generic.Inserted
-    .gi .x { color: #000; } // Generic.Inserted.Specific
+    .gi    { color: #fff; } // Generic.Inserted
+    .gi .x { color: #fff; } // Generic.Inserted.Specific
     .go    { color: #888 } // Generic.Output
-    .gp    { color: #555 } // Generic.Prompt
+    .gp    { color: #777 } // Generic.Prompt
     .gs    { font-weight: bold } // Generic.Strong
     .gu    { color: #aaa } // Generic.Subheading
     .gt    { color: #a00 } // Generic.Traceback
@@ -44,7 +44,7 @@
     .ne    { color: #900; font-weight: bold } // Name.Exception
     .nf    { color: #900; font-weight: bold } // Name.Function
     .nn    { color: #555 } // Name.Namespace
-    .nt    { color: #000080 } // Name.Tag
+    .nt    { color: #62629e } // Name.Tag
     .nv    { color: #008080 } // Name.Variable
     .ow    { font-weight: bold } // Operator.Word
     .w     { color: #bbb } // Text.Whitespace
