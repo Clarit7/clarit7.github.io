@@ -1,7 +1,7 @@
 ---
 layout: post
 title: M1 맥 GPU 가속 지원하는 텐서플로우 개발환경 세팅
-categories: computer_science
+categories: mac_os
 tags: 
   - m1_mac
   - apple_silicon
