@@ -9,14 +9,14 @@
   background: #F7F7F7;
     }
 
-    .c     { color: #CCCCFF; font-style: italic } // Comment
+    .c     { color: #9E9EFF; font-style: italic } // Comment
     .err   { color: #DE3163; } // Error
     .k     { font-weight: bold } // Keyword
     .o     { font-weight: bold } // Operator
-    .cm    { color: #CCCCFF; font-style: italic } // Comment.Multiline
-    .cp    { color: #CCCCFF; font-weight: bold } // Comment.Preproc
-    .c1    { color: #CCCCFF; font-style: italic } // Comment.Single
-    .cs    { color: #CCCCFF; font-weight: bold; font-style: italic } // Comment.Special
+    .cm    { color: #9E9EFF; font-style: italic } // Comment.Multiline
+    .cp    { color: #9E9EFF; font-weight: bold } // Comment.Preproc
+    .c1    { color: #9E9EFF; font-style: italic } // Comment.Single
+    .cs    { color: #9E9EFF; font-weight: bold; font-style: italic } // Comment.Special
     .gd    { color: #fff;} // Generic.Deleted
     .gd .x { color: #fff;} // Generic.Deleted.Specific
     .ge    { font-style: italic } // Generic.Emph
@@ -24,8 +24,8 @@
     .gh    { color: #FF7F50 } // Generic.Heading
     .gi    { color: #fff; } // Generic.Inserted
     .gi .x { color: #fff; } // Generic.Inserted.Specific
-    .go    { color: #CCCCFF } // Generic.Output
-    .gp    { color: #CCCCFF } // Generic.Prompt
+    .go    { color: #9E9EFF } // Generic.Output
+    .gp    { color: #9E9EFF } // Generic.Prompt
     .gs    { font-weight: bold } // Generic.Strong
     .gu    { color: #FF7F50 } // Generic.Subheading
     .gt    { color: #DE3163 } // Generic.Traceback
@@ -43,7 +43,7 @@
     .ni    { color: #DFFF00 } // Name.Entity
     .ne    { color: #DE3163; font-weight: bold } // Name.Exception
     .nf    { color: #DE3163; font-weight: bold } // Name.Function
-    .nn    { color: #CCCCFF } // Name.Namespace
+    .nn    { color: #9E9EFF } // Name.Namespace
     .nt    { color: #6495ED } // Name.Tag
     .nv    { color: #FFBF00 } // Name.Variable
     .ow    { font-weight: bold } // Operator.Word
@@ -63,7 +63,7 @@
     .sr    { color: #9FE2BF } // Literal.String.Regex
     .s1    { color: #DE3163 } // Literal.String.Single
     .ss    { color: #6495ED } // Literal.String.Symbol
-    .bp    { color: #CCCCFF } // Name.Builtin.Pseudo
+    .bp    { color: #9E9EFF } // Name.Builtin.Pseudo
     .vc    { color: #DFFF00 } // Name.Variable.Class
     .vg    { color: #DFFF00 } // Name.Variable.Global
     .vi    { color: #DFFF00 } // Name.Variable.Instance
