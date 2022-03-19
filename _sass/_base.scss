@@ -68,6 +68,8 @@ ul, ol {
 }
 
 li {
+    overflow-wrap: break-word;
+    
     > ul,
     > ol {
          margin-bottom: 0;
