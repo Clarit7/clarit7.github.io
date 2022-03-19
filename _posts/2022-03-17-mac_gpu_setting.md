@@ -219,17 +219,13 @@ Epoch 5/5
 
 <br/>
 
-### 여담
+### 기타
 
 <br/>
 
 파이토치는 애플실리콘 네이티브를 지원하지만 아직까지 GPU가속 지원은 개발중이라고 한다.
 
-개인적으로 따로 쓸 수 있는 GPU 서버가 없는데, Paperspace사의 Gradient라는 클라우드 딥러닝 플랫폼이 괜찮아보여서 파이토치 써야 할 때 사용해 보려고 한다.
-
-Colab과 다르게 무료 플랜에서 오래 돌려도 세션이 끊어지지 않고 기본 저장 공간까지 제공한다. 요금제는 구독과 종량제가 혼합된 형태인데, 개인용 구독 플랜은 1달에 8달러로 저렴한 편이라 무료로 써보다가 괜찮으면 결제해보려고 한다.
-
-[https://stackoverflow.com/questions/42182706/how-to-uninstall-anaconda-completely-from-macos](https://stackoverflow.com/questions/42182706/how-to-uninstall-anaconda-completely-from-macos)
+개인적으로 따로 쓸 수 있는 GPU 서버가 없다면 구글 코랩이나 Paperspace Gradient같은 클라우드 딥러닝 플랫폼을 사용하는걸 권한다.
 
 <br/>
 
