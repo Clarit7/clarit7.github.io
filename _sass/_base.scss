@@ -65,6 +65,8 @@ ul, ol {
 }
 
 li {
+    overflow-wrap: break-word;
+
     > ul,
     > ol {
          margin-bottom: 0;
@@ -88,7 +90,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
-    overflow-wrap: break-word;
 
     &:hover {
         color: $color-2;
