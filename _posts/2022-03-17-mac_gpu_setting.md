@@ -229,6 +229,8 @@ Epoch 5/5
 
 Colab과 다르게 무료 플랜에서 오래 돌려도 세션이 끊어지지 않고 기본 저장 공간까지 제공한다. 요금제는 구독과 종량제가 혼합된 형태인데, 개인용 구독 플랜은 1달에 8달러로 저렴한 편이라 무료로 써보다가 괜찮으면 결제해보려고 한다.
 
+[https://stackoverflow.com/questions/42182706/how-to-uninstall-anaconda-completely-from-macos](https://stackoverflow.com/questions/42182706/how-to-uninstall-anaconda-completely-from-macos)
+
 <br/>
 
  ---
