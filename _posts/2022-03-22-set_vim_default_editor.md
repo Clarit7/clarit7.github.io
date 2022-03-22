@@ -25,7 +25,7 @@ tags:
 <p align="center">
 	<img src="/images/2022/03/22/1.png" width="800px">
 	<figcaption style="text-align:center; font-size:12px; color:#808080">
-		Automator 실행 후 '새로운 문서' 선택
+		런치패드 또는 Spotlight 검색으로 Automator 실행 -> '새로운 문서' 선택
  	</figcaption>
 </p>
 
@@ -43,7 +43,7 @@ tags:
 <p align="center">
 	<img src="/images/2022/03/22/3.png" width="800px">
 	<figcaption style="text-align:center; font-size:12px; color:#808080">
-		검색창에 AppleScript 검색 후 'AppleScript 실행' 더블클릭, 스크립트 입력창에 아래 코드 작성
+		검색창에 'AppleScript' 검색 후 'AppleScript 실행' 더블클릭, 스크립트 입력창에 아래 코드 작성
  	</figcaption>
 </p>
 
@@ -86,7 +86,7 @@ end run
 <p align="center">
 	<img src="/images/2022/03/22/4.png" width="800px">
 	<figcaption style="text-align:center; font-size:12px; color:#808080">
-		응용프로그램 이름 및 위치 지정
+		앱 이름 및 위치 지정
  	</figcaption>
 </p>
 
@@ -95,7 +95,7 @@ end run
 <p align="center">
 	<img src="/images/2022/03/22/5.png" width="800px">
 	<figcaption style="text-align:center; font-size:12px; color:#808080">
-		'응용 프로그램' 등 적당한 위치에 오토메이터 앱 저장
+		'응용 프로그램'과 같은 적당한 위치에 작성한 앱 저장
  	</figcaption>
 </p>
 
@@ -104,7 +104,7 @@ end run
 <p align="center">
 	<img src="/images/2022/03/22/6.png" width="800px">
 	<figcaption style="text-align:center; font-size:12px; color:#808080">
-		우클릭 -> 다음으로 열기 -> 기타
+		열고싶은 텍스트 파일 우클릭 -> 다음으로 열기 -> 기타
  	</figcaption>
 </p>
 
@@ -113,7 +113,7 @@ end run
 <p align="center">
 	<img src="/images/2022/03/22/7.png" width="800px">
 	<figcaption style="text-align:center; font-size:12px; color:#808080">
-		저장한 앱 선택, '항상 선택한 응용 프로그램으로 열기' 체크
+		저장한 앱 선택 -> '항상 선택한 응용 프로그램으로 열기' 체크
  	</figcaption>
 </p>
 
@@ -124,8 +124,6 @@ end run
 <br/>
 
 ### 실행 결과
-
-<br/>
 
 <p align="center">
 	<img src="/images/2022/03/22/8.png" width="800px">
