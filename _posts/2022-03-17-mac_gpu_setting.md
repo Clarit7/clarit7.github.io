@@ -56,7 +56,6 @@ Miniforge는 Conda와 비슷한 파이썬 패키지 및 가상환경 관리 플�
 
 아래 명령어로 설치를 진행한다.
 
-{% include codeHeader.html %}
 ```bash
 $ chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
 $ sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
@@ -73,7 +72,6 @@ Miniforge 설치 중 환경변수 이름을 conda로 사용할 거냐고 묻는 
 
 설치확인
 
-{% include codeHeader.html %}
 ```bash
 (base)$ conda info
 
@@ -100,7 +98,6 @@ Homebrew를 사용하지 말라는 이유가 여기 있다. Miniforge는 쉘 스
 
 <br/>
 
-{% include codeHeader.html %}
 ```bash
 (base)$ conda install -c apple tensorflow-deps
 ```
@@ -111,7 +108,6 @@ Homebrew를 사용하지 말라는 이유가 여기 있다. Miniforge는 쉘 스
 
 <br/>
 
-{% include codeHeader.html %}
 ```bash
 (base)$ python -m pip install tensorflow-macos
 ```
@@ -122,7 +118,6 @@ Homebrew를 사용하지 말라는 이유가 여기 있다. Miniforge는 쉘 스
 
 <br/>
 
-{% include codeHeader.html %}
 ```bash
 (base)$ python -m pip install tensorflow-metal
 ```
@@ -153,7 +148,6 @@ Multi-Level Intermediate Representation, 다중 계층에서 파편화된 딥러
 
 MNIST 예제 코드
 
-{% include codeHeader.html %}
 ```python
 import tensorflow as tf
 
@@ -182,7 +176,6 @@ model.evaluate(x_test,  y_test, verbose=2)
 
 실행 결과
 
-{% include codeHeader.html %}
 ```
 Metal device set to: Apple M1 Pro
 
