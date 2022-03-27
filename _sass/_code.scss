@@ -3,10 +3,11 @@ pre.highlight {
  
     // copy code to clipboard
     .copy {
+      border-radius: 5%;
       color: white;
       position: absolute;
-      right: 1.2rem;
-      top: 1.2rem;
+      right: 0.2rem;
+      top: 0.2rem;
       opacity: 0;
  
       &:active,
