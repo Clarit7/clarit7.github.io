@@ -3,7 +3,6 @@ pre.highlight {
  
     // copy code to clipboard
     .copy {
-      border-radius: 5%;
       color: white;
       position: absolute;
       right: 0.2rem;
@@ -13,7 +12,8 @@ pre.highlight {
       &:active,
       &:focus,
       &:hover {
-        background: rgba(0, 0, 0, 0.7);
+        background: #77af9c;
+        border-radius: 5%;
         opacity: 1;
       }
     }
@@ -21,7 +21,8 @@ pre.highlight {
     &:active .copy,
     &:focus .copy,
     &:hover .copy {
-      background: rgba(0, 0, 0, 0.7);
+      background: #77af9c;
+      border-radius: 5%;
       opacity: 1;
     }
   }
