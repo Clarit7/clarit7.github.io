@@ -68,4 +68,26 @@
     .vg    { color: #8ac926 } // Name.Variable.Global
     .vi    { color: #8ac926 } // Name.Variable.Instance
     .il    { color: #6a4c93 } // Literal.Number.Integer.Long
+
+    .copy {
+      color: $white;
+      position: absolute;
+      right: 1.2rem;
+      top: 1.2rem;
+      opacity: 0;
+ 
+      &:active,
+      &:focus,
+      &:hover {
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 1;
+      }
+    }
+ 
+    &:active .copy,
+    &:focus .copy,
+    &:hover .copy {
+      background: rgba(0, 0, 0, 0.7);
+      opacity: 1;
+    }
 }
