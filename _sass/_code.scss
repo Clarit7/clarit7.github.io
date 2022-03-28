@@ -3,26 +3,49 @@ pre.highlight {
  
     // copy code to clipboard
     .copy {
+      margin: 0;
+      padding: 0.5rem 1rem;
+
+      text-align: center;
+      text-decoration: none;
+
+      display: inline-block;
+      width: auto;
+
       color: white;
-      position: absolute;
+      position: fixed;
       right: 0.15rem;
       top: 0.15rem;
       opacity: 0;
  
       &:active,
-      &:focus,
+      &:focus {
+        background: #fff;
+        outline: 0;
+      }
       &:hover {
         background: #77af9c;
-        border-radius: 5%;
+        border: none;
+        border-radius: 4px;
         opacity: 1;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        cursor: pointer;
+        transition: 0.5s;
       }
     }
  
     &:active .copy,
-    &:focus .copy,
+    &:focus .copy {
+      background: #fff;
+      outline: 0;
+    }
     &:hover .copy {
       background: #77af9c;
-      border-radius: 5%;
+      border: none;
+      border-radius: 4px;
       opacity: 1;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      cursor: pointer;
+      transition: 0.5s;
     }
   }
