@@ -1,11 +1,8 @@
 pre.highlight {
     position: relative;
- 
+
     // copy code to clipboard
     .copy {
-      margin: 0;
-      padding: 0.5rem 1rem;
-
       text-align: center;
       text-decoration: none;
 
@@ -14,18 +11,19 @@ pre.highlight {
 
       color: white;
       position: absolute;
-      top: 0.15rem;
+      top: 0.1rem;
+      right: 0.1rem;
       opacity: 0;
  
       &:active,
       &:focus {
         background: #fff;
-        right: 0.15rem;
+        right: 0.1rem;
         outline: 0;
       }
       &:hover {
         background: #77af9c;
-        right: 0.15rem;
+        right: 0.1rem;
         border: none;
         border-radius: 4px;
         opacity: 1;
@@ -38,12 +36,12 @@ pre.highlight {
     &:active .copy,
     &:focus .copy {
       background: #fff;
-      right: 0.15rem;
+      right: 0.1rem;
       outline: 0;
     }
     &:hover .copy {
       background: #77af9c;
-      right: 0.15rem;
+      right: 0.1rem;
       border: none;
       border-radius: 4px;
       opacity: 1;
