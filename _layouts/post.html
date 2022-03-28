@@ -29,7 +29,7 @@ layout: default
       button.ariaLabel = 'Copy code to clipboard';
       button.innerText = copyText;
       button.addEventListener('click', function () {
-        var code = div.querySelector('code').innerText.trim();
+        var code = div.querySelector('pre').querySelector('code').innerText.trim();
         navigator.clipboard.writeText(code);
         button.innerText = 'Copied';
         setTimeout(function () {
