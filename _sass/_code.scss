@@ -3,9 +3,6 @@ pre.highlight {
 
     // copy code to clipboard
     .copy {
-      margin: 0;
-      padding: 0.5rem 1rem;
-
       text-align: center;
       text-decoration: none;
 
@@ -15,6 +12,7 @@ pre.highlight {
       color: white;
       position: absolute;
       top: 0.1rem;
+      right: 0.1rem;
       opacity: 0;
  
       &:active,
