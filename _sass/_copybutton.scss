@@ -19,11 +19,11 @@ div.highlight {
       right: 0.1rem;
       opacity: 0;
       transition: 0.2s;
- 
+      pointer-events: none;
+
       &:active,
       &:focus {
         background: #fff;
-        right: 0.1rem;
         outline: 0;
       }
       &:hover {
@@ -31,6 +31,7 @@ div.highlight {
         opacity: 1;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         cursor: pointer;
+        pointer-events: auto;
       }
     }
  
@@ -44,5 +45,6 @@ div.highlight {
       opacity: 1;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
       cursor: pointer;
+      pointer-events: auto;
     }
 }
