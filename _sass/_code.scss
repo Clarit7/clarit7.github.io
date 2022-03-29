@@ -1,6 +1,10 @@
 div.highlight {
     position: relative;
 
+    pre.highlight {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
     // copy code to clipboard
     .copy {
       text-align: center;
