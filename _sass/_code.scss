@@ -1,10 +1,6 @@
 div.highlight {
     position: relative;
 
-    pre.highlight {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
     // copy code to clipboard
     .copy {
       text-align: center;
@@ -50,4 +46,9 @@ div.highlight {
       cursor: pointer;
       transition: 0.5s;
     }
-  }
+}
+
+pre.highlight {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
