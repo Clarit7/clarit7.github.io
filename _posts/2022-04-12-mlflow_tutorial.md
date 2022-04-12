@@ -36,7 +36,7 @@ MLFlow는 대중적인 MLOps 오픈소스 라이브러리 중 하나이다. 강�
 <br/>
 
 <p align="center">
-	<img src="/images/2022/04/12/1.png" width="800px">
+	<img src="/images/2022/04/12/0.png" width="800px">
 	<figcaption style="text-align:center; font-size:12px; color:#808080">
 		MLFlow 홈페이지
  	</figcaption>
@@ -329,7 +329,7 @@ mlflow ui -p 9999  # 포트 번호 지정
 <p align="center">
 	<img src="/images/2022/04/12/4.png" width="800px">
 	<figcaption style="text-align:center; font-size:12px; color:#808080">
-		실행 정보
+		조건부 필터링
  	</figcaption>
 </p>
 
@@ -366,7 +366,7 @@ rm -rf mlruns/.trash/*
 
 <br/>
 
-MLFlow를 터미널에서 포그라운드 상태로 'ctrl + c'를 눌러 종료할 수 있다.
+터미널에서 포그라운드 상태로 'ctrl + c'를 눌러 MLFlow를 종료할 수 있다.
 
 kill -9 명령어나 pkill 등으로는 종료돼도 다시 자동으로 실행되니까 위 방법으로 종료하자. 맥에서도 'command'가 아닌 'ctrl'을 그대로 사용하면 된다.
 
