@@ -9,7 +9,7 @@ permalink: /about/
 
 <br/>
 
-Seoul. Korea. AI Lab Unit, Hana Bank.
+Seoul. Korea. AI Unit, Hana Bank.
 
 Studied ML/DL/RL in Theory of Computation Lab, Kangwon National University(Bachelor's degree)
 
@@ -23,7 +23,7 @@ Studied ML/DL/RL in Theory of Computation Lab, Kangwon National University(Bache
 
 ## Career
 
-* **2021.07 ~ 현재** : 하나은행 데이터&제휴투자본부 AI Lab Unit 근무
+* **2021.07 ~ 현재** : 하나은행 ICT리빌드 본부 AI Unit 근무
 * **2019.12 ~ 2021.07** : 강원대학교 계산이론 연구실 학부연구생
 * **2019.03 ~ 2021.08** : 강원대학교 컴퓨터정보통신공학과 전과, 학사 졸업
 * **2015.03 ~ 2016.08** : 강원대학교 화학공학과 입학 및 학부 생활
