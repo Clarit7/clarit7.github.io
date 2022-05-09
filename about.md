@@ -118,4 +118,6 @@ Studied ML/DL/RL in Theory of Computation Lab, Kangwon National University(Bache
 
 * **Modular Reinforcement Learning for Playing the Game of Tron**
 
+  Mingi Jeon*, Jay Lee, Sang-Ki Ko
+  
   IEEE Access - 2022
