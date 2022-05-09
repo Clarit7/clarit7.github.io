@@ -116,6 +116,6 @@ Studied ML/DL/RL in Theory of Computation Lab, Kangwon National University(Bache
 
 <br/>
 
-* **TRON의 비정적, 정적 에이전트 결합 학습 방법 연구**
+* **Modular Reinforcement Learning for Playing the Game of Tron**
 
-  In progress
+  IEEE Access - 2022
