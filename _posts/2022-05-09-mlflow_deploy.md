@@ -191,7 +191,9 @@ preds
 ```python
 val_acc = accuracy_score(y, preds.T)
 eval_acc
+```
 
+```bash
 >>>
 0.9
 ```
@@ -211,11 +213,15 @@ plt.title("Confusion Matrix")
 <br/>
 
 <p align="center">
-	<img src="/images/2022/05/09/5.png" width="800px">
+	<img src="/images/2022/05/09/5.png" width="600px">
 	<figcaption style="text-align:center; font-size:12px; color:#808080">
 		Confusion Matrix
  	</figcaption>
 </p>
+
+<br/>
+
+20개 중 총 18개의 데이터에 대해 예측에 성공했다.
 
 <br/>
 
