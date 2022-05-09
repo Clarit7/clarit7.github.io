@@ -366,9 +366,9 @@ rm -rf mlruns/.trash/*
 
 <br/>
 
-터미널에서 포그라운드 상태로 'ctrl + c'를 눌러 MLFlow를 종료할 수 있다.
+터미널에서 포그라운드 상태로 'ctrl + c'를 눌러 MLFlow를 종료할 수 있다. 맥에서도 'command'가 아닌 'ctrl'을 그대로 사용하면 된다.
 
-kill -9 명령어나 pkill 등으로는 종료돼도 다시 자동으로 실행되니까 위 방법으로 종료하자. 맥에서도 'command'가 아닌 'ctrl'을 그대로 사용하면 된다.
+또는 ```pkill -f gunicorn``` 으로도 종료할 수 있다.
 
 <br/>
 
