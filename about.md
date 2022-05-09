@@ -110,6 +110,8 @@ Studied ML/DL/RL in Theory of Computation Lab, Kangwon National University(Bache
 
 * **AlphaQuoridor: AlphaZero 알고리즘 기반 쿼리도 게임 에이전트 구현**
 
+  Jay Lee, Sang-Ki Ko
+
   ![quoridor](./images/about/quoridor.gif)
 
   [Github](https://github.com/Clarit7/AlphaZero_Quoridor) &nbsp; &nbsp; [Paper](https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09874821)
