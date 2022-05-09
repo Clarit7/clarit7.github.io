@@ -46,6 +46,14 @@ Studied ML/DL/RL in Theory of Computation Lab, Kangwon National University(Bache
 
 <br/>
 
+* **제 27회 한국정보올림피아드 (2010.06/08)**
+
+  강원도대회 - 금상
+  
+  전국대회 - 동상
+
+<br/>
+
 * **한국정보과학회 학부생/주니어 부문 (2020.08)**
 
   AlphaQuoridor: AlphaZero 알고리즘 기반 쿼리도 게임 에이전트 구현 - 장려상
