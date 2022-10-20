@@ -106,9 +106,9 @@ Studied ML/DL/RL in Theory of Computation Lab, Kangwon National University(Bache
 <br/>
 
 * **교내 산학협력 프로젝트**
-  
-  ![/images/about/1.png](/images/about/1.png)
-  
+
+<img src="/images/about/1.png" width="800px">
+
   bunnfit 앱 타이머 모듈 및 운동추천 웹앱 제작 - Team Leader, React js developer
 
   [Android](https://play.google.com/store/apps/details?id=com.bunnit.haja.android) &nbsp; &nbsp; [iOS](https://apps.apple.com/kr/app/%EB%B2%88%ED%95%8F-%EA%B8%B0%EB%A1%9D%EC%9D%B4-%EB%AA%B8%EC%9D%84-%EB%A7%8C%EB%93%A0%EB%8B%A4/id1503464984) &nbsp; &nbsp; [Webapp](https://poll.haja.life/) &nbsp; &nbsp; [Interview](https://swuniv.kr/540522002/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=7381249&t=board)
