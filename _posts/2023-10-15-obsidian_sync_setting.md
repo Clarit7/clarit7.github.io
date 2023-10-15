@@ -445,7 +445,7 @@ Push shorcut도 동일하게 세팅하면 된다. 단, 조건은 앱이 닫힐 �
 이렇게 귀찮은 commit과 push가 앱을 닫을때 자동으로 스무스하게 실행된다!
 
 <p align="center">
-    <img src="/images/2023/10/15/36.png" width="800px">
+    <img src="/images/2023/10/15/36.webp" width="800px">
 </p>
 
 <br/>
