@@ -140,7 +140,7 @@ Obsidian을 실행한다. 만약 이미 다른 vault가 열려있다면 왼쪽 �
 Open folder as vault 로 아까 로컬 저장소에 클론한 폴더를 연다.
 
 <p align="center">
-    <img src="/images/2023/10/15/3.png" width="800px"
+    <img src="/images/2023/10/15/3.png" width="800px">
 </p>
 
 <br/>
