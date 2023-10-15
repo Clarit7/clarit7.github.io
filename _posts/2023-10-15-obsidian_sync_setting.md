@@ -247,11 +247,11 @@ Pull updates on startup 옵션도 키는 것을 추천한다.
     <img src="/images/2023/10/15/13.png" width="800px">
 </p>
 
-
-
 <p align="center">
     <img src="/images/2023/10/15/14.png" width="800px">
 </p>
+
+<br/>
 
 앱 실행 후 Clone repository를 선택한다.
 
