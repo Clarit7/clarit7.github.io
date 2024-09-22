@@ -25,7 +25,7 @@ color-2: '#547980'
 # Author pictre 100x100 --> keep it inside img folder.
 author-image: 'author.jpg'
 author-name: 'Jay Lee' 
-author-about: 'Junior programmer, works in AI Unit, Hana Bank' 
+author-about: 'Junior programmer, works in AI Unit, Hana Institute of Technology' 
 
 # Build settings
 markdown: kramdown

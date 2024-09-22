@@ -17,7 +17,7 @@ tags:
 
 <br/>
 
-음성 파일을 업로드해 자막을 생성하고, 그 자막과 연관된 이미지를 생성하는 AWS Bedrock 토이 프로젝트의 튜토리얼이다.
+음성 파일을 업로드해 자막을 생성하고, 그 자막과 연관된 이미지를 생성하는 프로세스를 자동화하는 AWS Bedrock 토이 프로젝트의 튜토리얼이다.
 
 사용된 AWS 서비스는 다음과 같다.
 
@@ -514,7 +514,11 @@ Body 탭에선 입력 음성파일을 업로드할 수 있는데, 파일 타입�
 
 <br/>
 
-생성한 파일이 정상적으로 버킷에 존재하는지 확인해보자.
+생성한 파일이 정상적으로 버킷에 존재하는지 확인해보자. 정상적으로 음성 파일이 버킷에 업로드 된 것을 확인할 수 있다.
+
+<br/>
+
+남은 부분들은 [다음 게시글](https://clarit7.github.io/aws_tutorial_bedrock_2/)로 이어진다.
 
 <br/>
 
@@ -524,7 +528,7 @@ Body 탭에선 입력 음성파일을 업로드할 수 있는데, 파일 타입�
 
 ### 출처
 
-* https://www.youtube.com/watch?v=gXMZqaQC-T8
-* https://www.espressoenglish.net/500audio/
+* [https://www.youtube.com/watch?v=gXMZqaQC-T8](https://www.youtube.com/watch?v=gXMZqaQC-T8)
+* [https://www.espressoenglish.net/500audio/](https://www.espressoenglish.net/500audio/)
 
 <br/>
