@@ -595,7 +595,7 @@ Postman으로 테스트 해보자.
 <br/>
 
 <p align="center">
-    <img src="/images/2024/09/22/79.png" width="800px">
+    <img src="/images/2024/09/22/79.jpg" width="800px">
 </p>
 
 <br/>
