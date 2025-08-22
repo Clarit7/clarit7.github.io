@@ -114,8 +114,8 @@ OpenAI는 Python 및 Rust용 공식 openai-harmony라이브러리를 제공하�
 
 convo = Conversation.from_messages(
     [
-	    # System Messege: Identity(모델 정체성)과 reasoning effort 등이 포함된다. 특히, 모델 정체성은 아래 문장을 바꾸지 말고 그대로 사용하라고 강조한다.
-	    # You are ChatGPT, a large language model trained by OpenAI.
+        # System Messege: Identity(모델 정체성)과 reasoning effort 등이 포함된다. 특히, 모델 정체성은 아래 문장을 바꾸지 말고 그대로 사용하라고 강조한다.
+        # You are ChatGPT, a large language model trained by OpenAI.
         Message.from_role_and_content(Role.SYSTEM, system_message),
         # Developer Messege: 시스템 프롬프트, 모델의 성격이나 역할, 룰 등을 정의하고 싶다면 이 부분에 정의하면 된다.
         Message.from_role_and_content(Role.DEVELOPER, developer_message),
